@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="IMG/logo/back-groud-tranf - Copy (2).png" type="image/x-icon" >
+        <link rel="stylesheet" href="CSS/main-travel.css">
+        <link rel="stylesheet" href="CSS/introduce.css">
+        <link rel="stylesheet" href="CSS/tinTuc.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Tin Tức</title>
+    </head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <div class="header_nav_box">
+                <!-- responsive nav start-->
+                <input type="checkbox" id="nav_checkbox">
+                <label for="nav_checkbox" class="bars"><i class=" fas fa-bars"></i></label>
+                <!-- responsive nav end -->
+
+                <div class="header_nav_box_logo"><img  src="IMG/logo/tranf.png" alt=""></div>
+                <ul class="header_nav_menu">   
+                    <li class="header_nav_item"><a href="index.html">TRANG CHỦ</a></li>             
+                    <li class="header_nav_item"><a href="introduce.html">GIỚI THIỆU</a></li>
+                    <li class="header_nav_item">
+                        <a href="">TOUR NỘI ĐỊA<i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i></a>
+                        <div class="menu_child menu_child--noiDia">
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH MIỀN BẮC</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Hà Nội</a></li>
+                                    <li><a href="">Du lịch Sa Pa</a></li>
+                                    <li><a href="">Du lịch Hạ Long</a></li>    
+                                </ul>
+                            </div>   
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH MIỀN TRUNG</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Nha Trang</a></li>
+                                    <li><a href="">Du lịch Đà Nẵng</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH MIỀN NAM</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Phú Quốc</a></li>
+                                    <li><a href="">Du lịch Côn Đảo</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </li>
+                    <li class="header_nav_item">
+                        <a href="">TOUR NƯỚC NGOÀI<i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i></a>
+                        <div class="menu_child menu_child--nuocNgoai">
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU Á</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Hàn Quốc</a></li>
+                                    <li><a href="">Du lịch Nhật Bản</a></li>                               
+                                </ul>
+                            </div>   
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU ÂU</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Anh</a></li>
+                                    <li><a href="">Du lịch Nga</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU MỸ</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Canada</a></li>
+                                    <li><a href="">Du lịch Mỹ</a></li>
+                                </ul>
+                            </div> 
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU ÚC</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch New Zealand</a></li>
+                                    <li><a href="">Du lịch Úc</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="header_nav_item"><a href="tinTuc.html">TIN TỨC</a></li>
+
+                    <li class="header_nav_item"><a href="lienHe.html">LIÊN HỆ</a></li>
+
+                    <li class="header_nav_item">
+                        <i class="fas fa-search search_icon"></i>
+                        <div class="menu_child menu_child--search">
+                            <div class="menu_child_item">
+                                <ul class="menu_list">
+                                    <li class="search_block">
+                                        <button class="Select_btn" >All
+                                            <i style="margin-left: 5px; opacity: 0.5; " class="fas fa-angle-down"></i>
+                                            <div class="menu_child--select">
+                                                <div class="menu_child_item_select">
+                                                    <ul class="menu_list_select">
+                                                        <li><a href="">All</a></li>
+                                                        <li><a href="">Du lịch nước ngoài</a></li>
+                                                        <li><a href="">Du lịch trong nước</a></li>        
+                                                        <li><a href="">Khách sạn</a></li>                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <input placeholder="Tìm kiếm" type="text">
+                                        <!-- Bỏ label sau khi hoàn thiện tính năng -->
+                                        <button><label for="checkbox-sorry" class="fas fa-search"></label></button>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </li>
+
+                    <li class="header_nav_item"><a href="dangNhap.html">ĐĂNG NHẬP</a></li>
+
+
+                    <li class="header_nav_item" style="color: #dddddd;">|</li>
+
+                    <li class="header_nav_item">
+                        <i class="fas fa-shopping-cart shopping-icon"><div class="numberCart"></div></i>
+                    </li>
+                    
+                    <li class="header_nav_item">
+                        <div class="avatar-container"></div>
+                        <div class="menu_child menu_child--dangXuat">
+                            <div class="menu_child_item">
+                                <button class="dangXuat__btn">Đăng Xuất</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="shopping-icon shopping-icon--responsive"><i class="fas fa-shopping-cart "><div class="numberCart"></div></i></div>
+
+
+            <!-- Nav responsive content start-->
+                <label for="nav_checkbox" class="nav__overlay"></label >
+                <div class="nav-menu--responsive">
+                    <div class="menu_child_item menu_child_item--responsive">
+                                <ul class="menu_list menu_list--responsive">
+                                    <li class="search_block">
+                                        <button class="Select_btn" >All
+                                            <i style="margin-left: 5px; opacity: 0.5; " class="fas fa-angle-down"></i>
+                                            <div class="menu_child--select">
+                                                <div class="menu_child_item_select">
+                                                    <ul class="menu_list_select">
+                                                        <li><a href="">All</a></li>
+                                                        <li><a href="">Du lịch nước ngoài</a></li>
+                                                        <li><a href="">Du lịch trong nước</a></li>        
+                                                        <li><a href="">Khách sạn</a></li>                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <input placeholder="Tìm kiếm" type="text">
+                                        
+                                        <button><i class="fas fa-search"></i></button>
+                                    </li>
+                                </ul>
+                    </div> 
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a href="index.html">TRANG CHỦ</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="introduce.html">GIỚI THIỆU</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="">TOUR NỘI ĐỊA </a>
+                            <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down nav_icon--responsive1 "></i>
+                        </li>
+
+                        <li class="nav-menu__item nav-menu__item--noiDia-hidden hidden">
+                                <div class="menu_child2--noiDia">
+                                    <div >
+                                        <a href="">DU LỊCH MIỀN BẮC</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Hà Nội</a></li>
+                                            <li><a href="">Du lịch Sa Pa</a></li>
+                                            <li><a href="">Du lịch Hạ Long</a></li>    
+                                        </ul>
+                                    </div>   
+                                    <div >
+                                        <a href="">DU LỊCH MIỀN TRUNG</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Nha Trang</a></li>
+                                            <li><a href="">Du lịch Đà Nẵng</a></li>
+                                        </ul>
+                                    </div>
+                                    <div >
+                                        <a href="">DU LỊCH MIỀN NAM</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Phú Quốc</a></li>
+                                            <li><a href="">Du lịch Côn Đảo</a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="">TOUR NƯỚC NGOÀI</a>
+                            <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down nav_icon--responsive2 "></i>
+                        </li>
+
+                        <li class="nav-menu__item nav-menu__item--nuocNgoai-hidden hidden">
+                            <div class="menu_child2">
+                                <div>
+                                    <a href="">DU LỊCH CHÂU Á</a>
+                                    <ul>
+                                        <li><a href="">Du lịch Hàn Quốc</a></li>
+                                        <li><a href="">Du lịch Nhật Bản</a></li>                               
+                                    </ul>
+                                </div>   
+                                <div>
+                                    <a href="">DU LỊCH CHÂU ÂU</a>
+                                    <ul>
+                                        <li><a href="">Du lịch Anh</a></li>
+                                        <li><a href="">Du lịch Nga</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">DU LỊCH CHÂU MỸ</a>
+                                    <ul>
+                                        <li><a href="">Du lịch Canada</a></li>
+                                        <li><a href="">Du lịch Mỹ</a></li>
+                                    </ul>
+                                </div> 
+                                <div>
+                                    <a href="">DU LỊCH CHÂU ÚC</a>
+                                    <ul>
+                                        <li><a href="">Du lịch New Zealand</a></li>
+                                        <li><a href="">Du lịch Úc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="tinTuc.html">TIN TỨC</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="lienHe.html">LIÊN HỆ</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="dangNhap.html">ĐĂNG NHẬP</a>
+                        </li>
+                    </ul>
+                </div>
+                <label for="nav_checkbox" class="nav_icon-close"><i class="fas fa-times"></i></label >
+            <!-- nav responsive content end -->
+            </div>
+        </nav>     
+    </header>
+    <main>
+        <div class="heading_content">
+            <h3>Tin Tức</h3>
+        </div>
+        <div class="content">
+            <div class="main_content">
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="https://dulichsaigonnew.com/Content/1dulichsaigonnew/binh%20hung%2014.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Tất tần tật những kinh nghiệm bạn cần biết trước khi du lịch Bình Ba</h5>
+                            <p>
+                                Giới thiệu sơ lượt về đảo Bình Ba Bình Ba là một đảo nhỏ, diện 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="http://divui.com/blog/wp-content/uploads/2018/05/kinh-nghiem-du-lich-dai-loan-cover.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Vì sao bạn phải đến Đài Loan một lần trong đời?</h5>
+                            <p>
+                                Khung cảnh tuyệt đẹp: Đài Loan được bao phủ bởi màu xanh của cây cối và 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="IMG/tour-img/nhatrang_girl.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Du lịch Nha Trang: 10 điểm du lịch tham quan hấp dẫn nhất</h5>
+                            
+                            <p>
+                                1. Vinpearl Land Toạ lạc trên đảo Hòn Tre với những bãi biển trong xanh 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-11.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Khám phá 6 tiểu sa mạc tuyệt đẹp qua ảnh check-in của giới trẻ Việt</h5>
+                            <p>      
+                                Đồi cát Mũi Né (Bình Thuận): Trải dài trên phần lớn diện tích của Bình Thuận 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="IMG/tour-img/nhathohong.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Ba nhà thờ hút khách nhờ sơn màu hồng dọc miền đất nước</h5>
+                            <p>
+                                 Nhà thờ Tân Định có tên gọi chính thức là Nhà thờ Thánh Tâm Chúa 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="https://media.mia.vn/uploads/blog-du-lich/cho-chuyen-di-them-dang-nho-voi-cac-phuong-tien-di-chuyen-tu-tp-hcm-den-vung-tau-tien-loi-1634623422.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Du lịch Vũng Tàu: Cẩm nang từ A đến Z</h5>
+                            
+                            <p>
+                                Tổng quan du lịch Vũng Tàu Cách trung tâm thành phố Hồ Chí Minh chỉ khoảng 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="IMG/tour-img/du-lich-da-lat.jpg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>5 khu nghỉ dưỡng Đà Lạt giá rẻ bạn nên cân nhắc trong dịp tết dương lịch này </h5>
+                            <p>
+                                Khu nghỉ dưỡng Đà Lạt Wonder giá chỉ còn 1.155.000 đồng Nằm yên bình trên đường 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_content_item" >
+                    <div class="main_content_info">
+                        <img src="IMG/tour-img/phu_quoc.jpeg" alt="">
+                        <div class="main_content_info_child">
+                            <h5>Du lịch Phú Quốc: Cẩm nang từ A đến Z</h5>
+                            <p>
+                                Tổng quan du lịch Phú Quốc Một góc Phú Quốc (Ảnh: khoanhkhacvietnam.vn) Phú Quốc là quần 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="sidebar">
+                <div class="sidebar_content">
+                    <div class="search_block search_block--TinTuc">
+                        <input  placeholder="Tìm kiếm" type="text">      
+                        <button><label for="checkbox-sorry" class="fas fa-search"></label></button>
+                    </div>
+                    <h4>BÀI VIẾT MỚI NHẤT</h4>
+
+
+                    <div class="News_box">
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="https://dulichsaigonnew.com/Content/1dulichsaigonnew/binh%20hung%2014.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="HTML/tinTuc--render.html">
+                                    Tất tần tật những kinh nghiệm bạn cần biết trước khi du lịch Bình Ba
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="http://divui.com/blog/wp-content/uploads/2018/05/kinh-nghiem-du-lich-dai-loan-cover.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="HTML/tinTuc--render.html">
+                                    Vì sao bạn phải đến Đài Loan một lần trong đời?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="IMG/tour-img/nhatrang_girl.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="HTML/tinTuc--render.html">
+                                    Du lịch Nha Trang: 10 điểm du lịch tham quan hấp dẫn nhất
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-11.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="HTML/tinTuc--render.html">
+                                    Khám phá 6 tiểu sa mạc tuyệt đẹp qua ảnh check-in của giới trẻ Việt
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="IMG/tour-img/nhathohong.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="HTML/tinTuc--render.html">
+                                    Ba nhà thờ hút khách nhờ sơn màu hồng dọc miền đất nước
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+     </main>
+        <input type="checkbox" id="checkbox-sorry">    
+        <label for="checkbox-sorry" class="sory-overlay"></label>
+        <div class="SorryUser-Block">  
+            <div class="icon-box">
+            <label for="checkbox-sorry" class="fas fa-times close-sorry"></label>
+            </div>
+            
+            <h2>Sự Cố <i class="fas fa-exclamation-triangle"></i></h2>
+            <p>Ôi không!!! Hệ thống của chúng tôi đang gặp sự cố 
+                hoặc tính năng này đang trong giai đoạn phát triển.</p>
+                <p> Chúng tôi thành thật xin lỗi vì sự bất tiện này.</p>
+            <img src="IMG/logo/sorry.png" alt="">
+        </div>
+     <footer>
+        <div class="footer">
+            <div class="footer_fill">
+                <div class="footer_input">
+                    <img src="IMG/logo/tranf.png" alt="">
+                    <p>Đăng kí để không bỏ lỡ bất kì ưu đãi nào</p>
+                    <div class="footer_input_form">
+                        <input type="text">
+                        <button>GỬI</button>
+                    </div>
+                </div>
+                <div class="footer_contact">
+                    <p>Liên Hệ</p>
+                    <ul class="footer_contact_list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>85,Mỹ Phú,H.Châu Phú,An Giang</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>03.9999.9999</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Vib1910023@student.ctu.edu.vn</span>
+                        </li>
+                    </ul>
+                    <div class="footer_contact_icon">
+                        <ul>
+                            <li> <a href="https://www.facebook.com/gom.gomVvvv/"> <i class="fab fa-facebook-f"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-instagram"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-twitter"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-google-plus"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-youtube"></i>  </a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer_img">
+                    <p>Tour Phổ Biến</p>
+                    <div>
+                        <ul class="footer_img_list">
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/victoria_hotel.png" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/resort--phanthiet.png" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/nhaatrang.webp" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/hotram-hotel.png" alt=""></a></li>
+                            <li><a class="footer__img--tour" href="khachSan.html"><img src="IMG/tour-img/canada.jpg" alt=""></a></li>
+                            <li><a class="footer__img--tour" href="khachSan.html"><img src="IMG/tour-img/los angeles.jpg" alt=""></a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
+
+
+
+<script src="JS/renderPageKS.js"> </script>
+<script src="JS/renderPageTour.js"></script>
+<script src="JS/tinTuc.js"></script>
+<!-- Có link này mới hiện số và click vào giỏ hàng được -->
+<script src="JS/CartItem.js"></script>
+<script>
+    /*-------------------------------------Nav_responsive-start----------------------------------------- */
+    var iconclick1 = document.querySelector('.nav_icon--responsive1');
+    var item1 = document.querySelector('.nav-menu__item--noiDia-hidden');
+    var iconclick2 = document.querySelector('.nav_icon--responsive2');
+    var item2 = document.querySelector('.nav-menu__item--nuocNgoai-hidden');
+
+
+    iconclick1.onclick = function (){
+    item1.classList.toggle('hidden');
+    }
+    iconclick2.onclick = function (){
+    item2.classList.toggle('hidden');
+    }
+/*---------------------------------------NAV_responsive-end----------------------------------------------------- */
+</script>
+</body>
+</html>

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="IMG/logo/back-groud-tranf - Copy (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/main-travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trang Chủ</title>
+    <!--
+        Student: Bùi Trung Vỉ
+        MSSV: B1910023
+        Date-creat: 11/11/2021
+
+        Lưu ý: Tạo tài khoản sau đó đăng nhập mới đặt hàng cũng như xem giỏ hàng.
+        Tự nhận xét:
+        - Sử dụng html,css,js thuần.
+        - Web viết lúc chưa rành BEM nên em chưa theo nguyên tắc BEM
+        - Web tĩnh nên em chưa áp dụng call API.
+        - Chưa có chức năng tìm kiếm, quên mật khẩu...
+        - Chưa lấy phản hồi khách hàng.
+        - Chỉ mô phỏng vài sản phẩm nên các sản phẩm trên thanh nav chưa render được
+
+
+      web mẫu: http://mauweb.monamedia.net/altair/
+    -->
+
+</head>
+
+<body> 
+    <header>
+        <div class="header_slider" id="slider">
+            <nav class="header_nav">
+                <div class="header_nav_box">
+                    <!-- responsive nav start-->
+                    <input type="checkbox" id="nav_checkbox">
+                    <label for="nav_checkbox" class="bars"><i class=" fas fa-bars"></i></label>
+                    <!-- responsive nav end -->
+
+                    <div class="header_nav_box_logo"><img src="IMG/logo/tranf.png" alt=""></div>
+                    <ul class="header_nav_menu">
+                        <li class="header_nav_item"><a href="introduce.html">GIỚI THIỆU</a></li>
+                        <li class="header_nav_item">
+                            <a href="">TOUR NỘI ĐỊA<i style="margin-left: 5px; opacity: 0.5;"
+                                    class="fas fa-angle-down"></i></a>
+                            <div class="menu_child menu_child--noiDia">
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH MIỀN BẮC</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch Hà Nội</a></li>
+                                        <li><a href="">Du lịch Sa Pa</a></li>
+                                        <li><a href="">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH MIỀN TRUNG</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch Nha Trang</a></li>
+                                        <li><a href="">Du lịch Đà Nẵng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH MIỀN NAM</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch Phú Quốc</a></li>
+                                        <li><a href="">Du lịch Côn Đảo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="">TOUR NƯỚC NGOÀI<i style="margin-left: 5px; opacity: 0.5;"
+                                    class="fas fa-angle-down"></i></a>
+                            <div class="menu_child menu_child--nuocNgoai">
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH CHÂU Á</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch Hàn Quốc</a></li>
+                                        <li><a href="">Du lịch Nhật Bản</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH CHÂU ÂU</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch Anh</a></li>
+                                        <li><a href="">Du lịch Nga</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH CHÂU MỸ</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch Canada</a></li>
+                                        <li><a href="">Du lịch Mỹ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu_child_item">
+                                    <a href="">DU LỊCH CHÂU ÚC</a>
+                                    <ul class="menu_list">
+                                        <li><a href="">Du lịch New Zealand</a></li>
+                                        <li><a href="">Du lịch Úc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header_nav_item"><a href="tinTuc.html">TIN TỨC</a></li>
+
+                        <li class="header_nav_item"><a href="lienHe.html">LIÊN HỆ</a></li>
+
+                        <li class="header_nav_item">
+                            <i class="fas fa-search search_icon"></i>
+                            <div class="menu_child menu_child--search">
+                                <div class="menu_child_item">
+                                    <ul class="menu_list">
+                                        <li class="search_block">
+                                            <button class="Select_btn">All
+                                                <i style="margin-left: 5px; opacity: 0.5; "
+                                                    class="fas fa-angle-down"></i>
+                                                <div class="menu_child--select">
+                                                    <div class="menu_child_item_select">
+                                                        <ul class="menu_list_select">
+                                                            <li><a href="">All</a></li>
+                                                            <li><a href="">Du lịch nước ngoài</a></li>
+                                                            <li><a href="">Du lịch trong nước</a></li>
+                                                            <li><a href="">Khách sạn</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <input placeholder="Tìm kiếm" type="text">
+                                            <!-- Bỏ label sau khi hoàn thiện tính năng -->
+                                            <button><label for="checkbox-sorry" class="fas fa-search"></label></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header_nav_item"><a href="dangNhap.html">ĐĂNG NHẬP</a></li>
+
+
+                        <li class="header_nav_item" style="color: #dddddd;">|</li>
+
+                        <li class="header_nav_item">
+                            <i class="fas fa-shopping-cart shopping-icon">
+                                <div class="numberCart"></div>
+                            </i>
+                        </li>
+                        <li class="header_nav_item">
+                            <div class="avatar-container"></div>
+                            <div class="menu_child menu_child--dangXuat">
+                                <div class="menu_child_item">
+                                    <button class="dangXuat__btn">Đăng Xuất</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="shopping-icon shopping-icon--responsive">
+                        <i class="fas fa-shopping-cart ">
+                            <div class="numberCart"></div>
+                        </i>
+                    </div>
+
+
+                    <!-- Nav responsive content start-->
+                    <label for="nav_checkbox" class="nav__overlay"></label>
+                    <div class="nav-menu--responsive">
+                        <div class="menu_child_item menu_child_item--responsive">
+                            <ul class="menu_list menu_list--responsive">
+                                <li class="search_block">
+                                    <button class="Select_btn">All
+                                        <i style="margin-left: 5px; opacity: 0.5; " class="fas fa-angle-down"></i>
+                                        <div class="menu_child--select">
+                                            <div class="menu_child_item_select">
+                                                <ul class="menu_list_select">
+                                                    <li><a href="">All</a></li>
+                                                    <li><a href="">Du lịch nước ngoài</a></li>
+                                                    <li><a href="">Du lịch trong nước</a></li>
+                                                    <li><a href="">Khách sạn</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <input placeholder="Tìm kiếm" type="text">
+
+                                    <button><i class="fas fa-search"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav-menu__list">
+                            <li class="nav-menu__item">
+                                <a href="introduce.html">GIỚI THIỆU</a>
+                            </li>
+
+                            <li class="nav-menu__item">
+                                <a href="">TOUR NỘI ĐỊA </a>
+                                <i style="margin-left: 5px; opacity: 0.5;"
+                                    class="fas fa-angle-down nav_icon--responsive1 "></i>
+                            </li>
+
+                            <li class="nav-menu__item nav-menu__item--noiDia-hidden hidden">
+                                <div class="menu_child2--noiDia">
+                                    <div>
+                                        <a href="">DU LỊCH MIỀN BẮC</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Hà Nội</a></li>
+                                            <li><a href="">Du lịch Sa Pa</a></li>
+                                            <li><a href="">Du lịch Hạ Long</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">DU LỊCH MIỀN TRUNG</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Nha Trang</a></li>
+                                            <li><a href="">Du lịch Đà Nẵng</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">DU LỊCH MIỀN NAM</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Phú Quốc</a></li>
+                                            <li><a href="">Du lịch Côn Đảo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-menu__item">
+                                <a href="">TOUR NƯỚC NGOÀI</a>
+                                <i style="margin-left: 5px; opacity: 0.5;"
+                                    class="fas fa-angle-down nav_icon--responsive2 "></i>
+                            </li>
+
+                            <li class="nav-menu__item nav-menu__item--nuocNgoai-hidden hidden">
+                                <div class="menu_child2">
+                                    <div>
+                                        <a href="">DU LỊCH CHÂU Á</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Hàn Quốc</a></li>
+                                            <li><a href="">Du lịch Nhật Bản</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">DU LỊCH CHÂU ÂU</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Anh</a></li>
+                                            <li><a href="">Du lịch Nga</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">DU LỊCH CHÂU MỸ</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Canada</a></li>
+                                            <li><a href="">Du lịch Mỹ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">DU LỊCH CHÂU ÚC</a>
+                                        <ul>
+                                            <li><a href="">Du lịch New Zealand</a></li>
+                                            <li><a href="">Du lịch Úc</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-menu__item">
+                                <a href="tinTuc.html">TIN TỨC</a>
+                            </li>
+
+                            <li class="nav-menu__item">
+                                <a href="lienHe.html">LIÊN HỆ</a>
+                            </li>
+
+                            <li class="nav-menu__item">
+                                <a href="dangNhap.html">ĐĂNG NHẬP</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <label for="nav_checkbox" class="nav_icon-close"><i class="fas fa-times"></i></label>
+                    <!-- nav responsive content end -->
+                </div>
+            </nav>
+
+            <div class="header_slides">
+                <input type="radio" name="radio-btn" id="radio0">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first ">
+                    <img class="slide_img slide_img--0 zoomimg" src="IMG/baner-img/dalat2.jpeg" alt="">
+                </div>
+                <div class="slide ">
+                    <img class="slide_img slide_img--1" src="IMG/baner-img/paris_vip2.jpg" alt="">
+                </div>
+                <div class="slide ">
+                    <img class="slide_img slide_img--2" src="IMG/baner-img/nhatrangvip.jpg" alt="">
+                </div>
+                <div class="slide ">
+                    <img class="slide_img slide_img--3" src="IMG/baner-img/phuong-hoang-co-tran-vip2.jpg" alt="">
+                </div>
+
+                <!--nut chuyen slider-->
+                <div class="manual_checked">
+                    <label class="manual_btn btn0 active" for="radio0"></label>
+                    <label class="manual_btn btn1" for="radio1"></label>
+                    <label class="manual_btn btn2" for="radio2"></label>
+                    <label class="manual_btn btn3" for="radio3"></label>
+                </div>
+                <!--info cua slider-->
+                <div class="info_travel_slider">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <a href="#slider"><i class="far fa-arrow-alt-circle-up circle-up"></i></a>
+        <div class="filter_search">
+            <div class="filter_search_box">
+                <ul class="filter_search_box_list">
+                    <li class="filter_search_box_item">Danh mục
+                        <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i>
+                        <div class="menu_child menu_child--danhMuc">
+                            <div class="menu_child_item ">
+                                <ul class="menu_list menu_list_ul_lv1">
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">Du lịch nước ngoài</label>
+                                        <ul class="menu_list_ul_lv2">
+                                            <li class="menu_list_li_lv2">
+                                                <input type="checkbox">
+                                                <label for="">Du lịch châu Á</label>
+                                                <ul class="menu_list_lv3">
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Hàn Quốc</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Nhật Bản</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu_list_li_lv2">
+                                                <input type="checkbox">
+                                                <label for="">Du lịch châu Âu</label>
+                                                <ul class="menu_list_lv3">
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Anh</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Nga</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu_list_li_lv2">
+                                                <input type="checkbox">
+                                                <label for="">Du lịch châu MỸ</label>
+                                                <ul class="menu_list_lv3">
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Canada</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Mỹ</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><input type="checkbox"> <label for="">Du lịch trong nước</label>
+                                        <ul class="menu_list_ul_lv2">
+                                            <li class="menu_list_li_lv2"> <input type="checkbox"> <label for="">Du lịch
+                                                    miền Bắc</label>
+                                                <ul class="menu_list_lv3">
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Hạ Long</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Hà Nội</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Sa Pa</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu_list_li_lv2">
+                                                <input type="checkbox">
+                                                <label for="">Du lịch miền Trung </label>
+                                                <ul class="menu_list_lv3">
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Đà Nẵng</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Phú Yên</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="menu_list_li_lv2">
+                                                <input type="checkbox">
+                                                <label for="">Du lịch miền Nam </label>
+                                                <ul class="menu_list_lv3">
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Phú Quốc</label>
+                                                    </li>
+                                                    <li class="menu_list_li_lv3">
+                                                        <input type="checkbox">
+                                                        <label for="">Du lịch Côn Đảo</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter_search_box_item">Giá
+                        <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i>
+                        <div class="menu_child menu_child--gia">
+                            <div class="menu_child_item">
+                                <ul class="menu_list">
+                                    <li class="menu_child_gia_li">
+                                        <input type="radio" name="giaTien" id="giatien1" checked>
+                                        <label for="giatien1">All</label>
+                                    </li>
+                                    <li class="menu_child_gia_li">
+                                        <input type="radio" name="giaTien" id="giatien2">
+                                        <label for="giatien2">0đ - 2,000,000đ</label>
+                                    </li>
+                                    <li class="menu_child_gia_li">
+                                        <input type="radio" name="giaTien" id="giatien3">
+                                        <label for="giatien3">2,000,000đ - 5,000,000đ</label>
+                                    </li>
+                                    <li class="menu_child_gia_li">
+                                        <input type="radio" name="giaTien" id="giatien4">
+                                        <label for="giatien4">5,000,000đ - 10,000,000đ</label>
+                                    </li>
+                                    <li class="menu_child_gia_li">
+                                        <input type="radio" name="giaTien" id="giatien5">
+                                        <label for="giatien5">10,000,000đ - 20,000,000đ</label>
+                                    </li>
+                                    <li class="menu_child_gia_li">
+                                        <input type="radio" name="giaTien" id="giatien6">
+                                        <label for="giatien6">20,000,000đ - 50,000,000đ</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li class="filter_search_box_item">Số ngày
+                        <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i>
+                        <div class="menu_child menu_child--soNgay">
+                            <div class="menu_child_item">
+                                <ul class="menu_list menu_list_soNgay">
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">2</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">3</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">5</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">7</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">10</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </li>
+                    <li class="filter_search_box_item">Nơi khởi hành
+                        <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i>
+                        <div class="menu_child menu_child--noiKhoiHanh">
+                            <div class="menu_child_item">
+                                <ul class="menu_list">
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">Tp.Hồ Chí Minh</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <label for="">Hà Nội</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter_search_box_item">Giảm giá
+                        <input type="checkbox">
+                    </li>
+                    <!-- Khi nào tính năng hoàn thiện thì đỏi lable thành button -->
+                    <label for="checkbox-sorry" class="filter_search_btn">Tìm kiếm</label>
+                </ul>
+            </div>
+        </div>
+        <div class="topSale">
+            <div>
+                <h2>TOUR MUA NHIỀU</h2>
+                <p>TÌM TOUR PHÙ HỢP VỚI BẠN VÀ ĐẶT NGAY</p>
+            </div>
+        </div>
+
+        <div class="main_tour">
+            <div class="main_tour_box">
+                <div class="main_tour_box_item info_item--ks">
+                    <a href="khachSan.html">
+                        <img src="IMG/tour-img/victoria_hotel.png" alt="">
+                    </a>
+                    <div class="info_item ">
+                        <h5>KHÁCH SẠN</h5>
+                        <a href="khachSan.html">
+                            <p>ĐẶT PHÒNG KHÁCH SẠN VICTORIA SAPA RESORT</p>
+                        </a>
+                        <p>7,399,000 đ</p>
+                    </div>
+                </div>
+                <div class="main_tour_box_item info_item--ks">
+                    <a href="khachSan.html">
+                        <img src="IMG/tour-img/resort--phanthiet.png" alt="">
+                    </a>
+                    <div class="info_item">
+                        <h5>KHÁCH SẠN</h5>
+                        <a href="khachSan.html">
+                            <p>BEACH RESORT PHAN THIẾT KHUYẾN MÃI MÙA ĐÔNG</p>
+                        </a>
+                        <p>2,999,000 ₫</p>
+                    </div>
+                </div>
+                <div class="main_tour_box_item info_item--ks">
+                    <a href="khachSan.html">
+                        <img src="IMG/tour-img/nhaatrang.webp" alt="">
+                    </a>
+                    <div class="info_item">
+                        <h5>KHÁCH SẠN</h5>
+                        <a href="khachSan.html">
+                            <p>AN LAM RETREATS NINH VAN BAY</p>
+                        </a>
+                        <p>4,781,267 đ</p>
+                    </div>
+                </div>
+
+                <div class="main_tour_box_item info_item--ks">
+                    <a href="khachSan.html">
+                        <img src="IMG/tour-img/hotram-hotel.png" alt="">
+                    </a>
+                    <div class="info_item">
+                        <h5>KHÁCH SẠN</h5>
+                        <a href="khachSan.html">
+                            <p>ĐẶT PHÒNG KHÁCH SẠN GRAND HỒ TRÀM 5 SAO</p>
+                        </a>
+                        <p>1,980,000 ₫</p>
+                    </div>
+                </div>
+                <div class="main_tour_box_item info_item--tour">
+                    <a href="khachSan.html">
+                        <img src="IMG/tour-img/canada.jpg" alt="">
+                    </a>
+                    <div class="info_item">
+                        <h5>DU LỊCH CANADA</h5>
+                        <a href="khachSan.html">
+                            <p>DU LỊCH CANADA 10 NGÀY MÙA THU 2021 GIÁ TỐT KHỞI HÀNH TỪ SÀI GÒN</p>
+                        </a>
+                        <p>97,900,000 ₫</p>
+                    </div>
+                </div>
+                <div class="main_tour_box_item info_item--tour">
+                    <a href="khachSan.html">
+                        <img src="IMG/tour-img/los angeles.jpg" alt="">
+                    </a>
+                    <div class="info_item">
+                        <h5>DU LỊCH CHÂU MỸ</h5>
+                        <a href="khachSan.html">
+                            <p>DU LỊCH BỜ TÂY HOA KỲ 7 NGÀY LOS ANGELES - LAS VEGAS GIÁ TỐT 2021</p>
+                        </a>
+                        <p>34,900,000 ₫</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="comment">
+            <h2>KHÁCH HÀNG NHẬN XÉT</h2>
+            <div class="comment_box">
+                <div class="comment_box_slider">
+                    <div class="comment_box_slides">
+                        <input type="radio" name="radio-cmt" id="radio-comment0">
+                        <input type="radio" name="radio-cmt" id="radio-comment1">
+                        <input type="radio" name="radio-cmt" id="radio-comment2">
+                        <input type="radio" name="radio-cmt" id="radio-comment3">
+                        <div class="comment_box_slide firstSlide">
+                            <p>Chuyến đi của chúng tôi rất thú vị, được thưởng ngoạn phong cảnh đẹp và
+                                hướng dẫn viên Lê Minh Hải rất vui vẻ, nhiệt tình cũng như có kiến thức sâu rộng về các
+                                lĩnh vực.
+                            </p>
+                            <div class="comment_content_info">
+                                <strong>Chị Thảo</strong>
+                                <span>/</span>
+                                <span>Nhân viên văn phòng</span>
+                            </div>
+                        </div>
+                        <div class="comment_box_slide">
+                            <p>
+                                Khách sạn tốt, thức ăn tốt. Hướng dẫn viên đã đưa đoàn đi đầy đủ
+                                các điểm tham quan, và cũng đã xử lý tính huống tốt, làm vừa lòng tất cả hành khách
+                            </p>
+                            <div>
+                                <strong>Chị Nga</strong>
+                                <span>/</span>
+                                <span>Giáo viên</span>
+                            </div>
+                        </div>
+                        <div class="comment_box_slide">
+                            <p>JANG Travel đã cho chúng tôi được tìm hiểu vể văn hoá của nước ngoài và cho chúng tôi
+                                những ngày nghỉ thật thú vị,
+                                vui vẻ sau những ngày làm việc mệt mỏi. Xin cảm ơn</p>
+                            <div>
+                                <strong>Anh Vỉ</strong>
+                                <span>/</span>
+                                <span>Kĩ sư</span>
+                            </div>
+                        </div>
+                        <div class="comment_box_slide">
+                            <p>JANG Travel thực sự là một công ty du lịch tuyệt vời. Tôi đánh giá cao về các dịch vụ và
+                                sự chu đáo trong khâu chăm sóc khách hàng.</p>
+                            <div>
+                                <strong>Anh Hoàng</strong>
+                                <span>/</span>
+                                <span>Công chức</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="big_img_box">
+            <img src="IMG/baner-img/015.jpg" alt="">
+
+        </div>
+        <div class="big_img_info">
+            <div class="big_img_info_heading">
+                <h2>VỊNH HẠ LONG - DI SẢN THẾ GIỚI UNESCO</h2>
+            </div>
+            <div class="big_img_info_content">
+                <div class="big_img_info_content1">
+                    <p>Vịnh Hạ Long là một vịnh nhỏ thuộc phần bờ tây vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam,
+                        bao gồm vùng biển đảo của thành phố Hạ Long thuộc tỉnh Quảng Ninh.
+                        Vịnh Hạ Long là tác phẩm nghệ thuật tạo hình vĩ
+                        đại của thiên nhiên với sự hiện diện của hàng nghìn đảo đá muôn hình vạn trạng, với nhiều hang
+                        động kỳ thú quần tụ thành một thế giới vừa sinh động vừa huyền bí với
+                        hàng nghìn loài động thực vật vô cùng phong phú, đa dạng.
+                        Mỗi đảo mang một hình dáng khác nhau hết sức sinh động: hòn Đầu Người, hòn Rồng, hòn Lã Vọng,
+                        hòn Cánh Buồm, hòn Gà Chọi, hòn Lư Hương… Tiềm ẩn trong lòng các đảo đá ấy là
+                        những hang động tuyệt đẹp gắn với nhiều truyền thuyết thần kỳ.
+                    </p>
+                </div>
+                <div class="big_img_info_content2">
+                    <p> Một số truyền thuyết cho rằng "khi người Việt mới lập nước đã bị giặc ngoại xâm, Ngọc Hoàng sai
+                        Rồng Mẹ mang theo một đàn Rồng Con xuống hạ giới giúp người Việt đánh giặc. Thuyền giặc từ ngoài
+                        biển ào ạt tiến vào bờ vừa lúc đàn Rồng tới hạ giới. Đàn Rồng lập tức phun ra lửa thiêu cháy
+                        thuyền giặc, một phần nhả Châu Ngọc dựng thành bức tường đá
+                        sừng sững làm cho thuyền giặc đâm phải mà vỡ tan, chặn đứng bước tiến của giặc ngoại xâm."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reason_box">
+            <div class="fill-backgroud">
+                <div class="reason_box_heading">
+                    <h2>LÝ DO CHỌN JANG TRAVEL</h2>
+                </div>
+                <div class="reason_box_content">
+                    <div class="reason_box_content_item">
+                        <div class="reason_box_content_head">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Họp tác nhanh chóng, dễ dàng</h4>
+                        </div>
+                        <p>Một trong những đơn vị đi đầu trong việc đặt tour online tốt nhất Việt Nam. Áp dụng những
+                            công nghệ hiện đại nhất</p>
+                    </div>
+                    <div class="reason_box_content_item">
+                        <div class="reason_box_content_head">
+                            <i class="fas fa-headset"></i>
+                            <h4>Hỗ trợ 24/7</h4>
+                        </div>
+                        <p>Luôn giải đáp mọi thắc mắc của khách hàng dù bất kì thời gian nào trong ngày. Liên hệ ngay để
+                            trải nghiệm</p>
+                    </div>
+                    <div class="reason_box_content_item">
+                        <div class="reason_box_content_head">
+                            <i class="fas fa-tags"></i>
+                            <h4>Giá rẻ & nhiều ưu đãi</h4>
+                        </div>
+                        <p>Phương châm của công ty là để mọi người mọi nhà đều có thể đi du lịch với giá cả hợp lý</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reason_box2">
+            <div class="reason_box2_content">
+                <div class="reason_box2_item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h4>70,486+</h4>
+                    <p>Khách hàng hài lòng</p>
+                </div>
+                <div class="reason_box2_item">
+                    <i class="fas fa-route"></i>
+                    <h4>1,000+</h4>
+                    <p>Tour hoàn thành</p>
+                </div>
+                <div class="reason_box2_item">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>450+</h4>
+                    <p>Doanh nghiệp</p>
+                </div>
+                <div class="reason_box2_item">
+                    <i class="fas fa-headset"></i>
+                    <h4>100+</h4>
+                    <p>Tư vấn viên</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="news_heading">
+                <h2>TIN TỨC VÀ ƯU ĐÃI</h2>
+                <p> TIN MỚI NHẤT VÀ ƯU ĐÃI NỔI BẬT</p>
+            </div>
+            <div class="news_content">
+                <div class="news_item">
+                    <a href="tinTuc--render.html"><img
+                            src="https://dulichsaigonnew.com/Content/1dulichsaigonnew/binh%20hung%2014.jpg" alt="">
+                        <div class="news_item_info">
+                            <p>TẤT TẦN TẬT NHỮNG KINH NGHIỆM BẠN CẦN BIẾT TRƯỚC KHI DU LỊCH BÌNH BA</p>
+                            <span>17 Tháng Mười Một, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img
+                            src="http://divui.com/blog/wp-content/uploads/2018/05/kinh-nghiem-du-lich-dai-loan-cover.jpg"
+                            alt="">
+                        <div class="news_item_info">
+                            <p> VÌ SAO BẠN PHẢI ĐẾN ĐÀI LOAN MỘT LẦN TRONG ĐỜI?</p>
+                            <span>17 Tháng Mười Một, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img src="IMG/tour-img/nhatrang_girl.jpg" alt="">
+                        <div class="news_item_info">
+                            <p>DU LỊCH NHA TRANG: 10 ĐIỂM DU LỊCH THAM QUAN HẤP DẪN NHẤT</p>
+                            <span>17 Tháng Mười Một, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img
+                            src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-11.jpg"
+                            alt="">
+                        <div class="news_item_info">
+                            <p>KHÁM PHÁ 6 TIỂU SA MẠC TUYỆT ĐẸP QUA ẢNH CHECK-IN CỦA GIỚI TRẺ VIỆT</p>
+                            <span>16 Tháng Mười Hai, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img src="IMG/tour-img/nhathohong.jpg" alt="">
+                        <div class="news_item_info">
+                            <p>BA NHÀ THỜ HÚT KHÁCH NHỜ SƠN MÀU HỒNG DỌC MIỀN ĐẤT NƯỚC</p>
+                            <span>16 Tháng Mười Hai, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img
+                            src="https://media.mia.vn/uploads/blog-du-lich/cho-chuyen-di-them-dang-nho-voi-cac-phuong-tien-di-chuyen-tu-tp-hcm-den-vung-tau-tien-loi-1634623422.jpg"
+                            alt="">
+                        <div class="news_item_info">
+                            <p>DU LỊCH VŨNG TÀU: CẨM NANG TỪ A ĐẾN Z</p>
+                            <span>16 Tháng Mười Hai, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img src="IMG/tour-img/du-lich-da-lat.jpg" alt="">
+                        <div class="news_item_info">
+                            <p>5 KHU NGHỈ DƯỠNG ĐÀ LẠT GIÁ RẺ BẠN NÊN CÂN NHẮC TRONG DỊP TẾT DƯƠNG LỊCH NÀY</p>
+                            <span>16 Tháng Mười Hai, 2021</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news_item">
+                    <a href="tinTuc--render.html"> <img
+                            src="https://honthom.sunworld.vn/wp-content/uploads/2020/04/bai-sao-phu-quoc.jpg" alt="">
+                        <div class="news_item_info">
+                            <p> DU LỊCH PHÚ QUỐC: CẨM NANG TỪ A ĐẾN Z</p>
+                            <span>16 Tháng Mười Hai, 2021</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <input type="checkbox" id="checkbox-sorry">
+
+        <label for="checkbox-sorry" class="sory-overlay"></label>
+        <div class="SorryUser-Block">
+            <div class="icon-box">
+                <label for="checkbox-sorry" class="fas fa-times close-sorry"></label>
+            </div>
+
+            <h2>Sự Cố <i class="fas fa-exclamation-triangle"></i></h2>
+            <p>Ôi không!!! Hệ thống của chúng tôi đang gặp sự cố
+                hoặc tính năng này đang trong giai đoạn phát triển.</p>
+            <p> Chúng tôi thành thật xin lỗi vì sự bất tiện này.</p>
+            <img src="IMG/logo/sorry.png" alt="">
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer_fill">
+                <div class="footer_input">
+                    <img src="IMG/logo/tranf.png" alt="">
+                    <p>Đăng kí để không bỏ lỡ bất kì ưu đãi nào</p>
+                    <div class="footer_input_form">
+                        <input type="text">
+                        <button>GỬI</button>
+                    </div>
+                </div>
+                <div class="footer_contact">
+                    <p>Liên Hệ</p>
+                    <ul class="footer_contact_list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>85,Mỹ Phú,H.Châu Phú,An Giang</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>03.9999.9999</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Vib1910023@student.ctu.edu.vn</span>
+                        </li>
+                    </ul>
+                    <div class="footer_contact_icon">
+                        <ul>
+                            <li> <a href="https://www.facebook.com/gom.gomVvvv/"> <i class="fab fa-facebook-f"></i> </a>
+                            </li>
+                            <li> <a href=""> <i class="fab fa-instagram"></i> </a> </li>
+                            <li> <a href=""> <i class="fab fa-twitter"></i> </a> </li>
+                            <li> <a href=""> <i class="fab fa-google-plus"></i> </a> </li>
+                            <li> <a href=""> <i class="fab fa-youtube"></i> </a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer_img">
+                    <p>Tour Phổ Biến</p>
+                    <div>
+                        <ul class="footer_img_list">
+                            <li><a class="footer__img--ks" href="khachSan.html"><img
+                                        src="IMG/tour-img/victoria_hotel.png" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img
+                                        src="IMG/tour-img/resort--phanthiet.png" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img
+                                        src="IMG/tour-img/nhaatrang.webp" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img
+                                        src="IMG/tour-img/hotram-hotel.png" alt=""></a></li>
+                            <li><a class="footer__img--tour" href="khachSan.html"><img src="IMG/tour-img/canada.jpg"
+                                        alt=""></a></li>
+                            <li><a class="footer__img--tour" href="khachSan.html"><img
+                                        src="IMG/tour-img/los angeles.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/main-travel.js"></script>
+    <!-- Có 2 link này để có thể lắng nghe sự kiện onclick ở footer -->
+    <script src="JS/renderPageKS.js"></script>
+    <script src="JS/renderPageTour.js"></script>
+    <!-- Có link này mới hiện số và click vào giỏ hàng được -->
+    <script src="JS/CartItem.js"></script>
+    <script>
+        /*-------------------------------------Nav_responsive-start----------------------------------------- */
+        var iconclick1 = $('.nav_icon--responsive1');
+        var item1 = $('.nav-menu__item--noiDia-hidden');
+        var iconclick2 = $('.nav_icon--responsive2');
+        var item2 = $('.nav-menu__item--nuocNgoai-hidden');
+
+
+        iconclick1.onclick = function () {
+            item1.classList.toggle('hidden');
+        }
+        iconclick2.onclick = function () {
+            item2.classList.toggle('hidden');
+        }
+/*---------------------------------------NAV_responsive-end----------------------------------------------------- */
+    </script>
+</body>
+
+</html>

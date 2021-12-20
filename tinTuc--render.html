@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="IMG/logo/back-groud-tranf - Copy (2).png" type="image/x-icon" >
+        <link rel="stylesheet" href="CSS/main-travel.css">
+        <link rel="stylesheet" href="CSS/introduce.css">
+        <link rel="stylesheet" href="CSS/tinTuc.css">
+        <link rel="stylesheet" href="CSS/tinTuc--render.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Tin Tức</title>
+    </head>
+<body>
+    <header>
+        <nav class="header_nav">
+            <div class="header_nav_box">
+                <!-- responsive nav start-->
+                <input type="checkbox" id="nav_checkbox">
+                <label for="nav_checkbox" class="bars"><i class=" fas fa-bars"></i></label>
+                <!-- responsive nav end -->
+
+                <div class="header_nav_box_logo"><img  src="IMG/logo/tranf.png" alt=""></div>
+                <ul class="header_nav_menu">                
+                    <li class="header_nav_item"><a href="index.html">TRANG CHỦ</a></li>
+                    <li class="header_nav_item"><a href="introduce.html">GIỚI THIỆU</a></li>
+                    <li class="header_nav_item">
+                        <a href="">TOUR NỘI ĐỊA<i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i></a>
+                        <div class="menu_child menu_child--noiDia">
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH MIỀN BẮC</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Hà Nội</a></li>
+                                    <li><a href="">Du lịch Sa Pa</a></li>
+                                    <li><a href="">Du lịch Hạ Long</a></li>    
+                                </ul>
+                            </div>   
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH MIỀN TRUNG</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Nha Trang</a></li>
+                                    <li><a href="">Du lịch Đà Nẵng</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH MIỀN NAM</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Phú Quốc</a></li>
+                                    <li><a href="">Du lịch Côn Đảo</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </li>
+                    <li class="header_nav_item">
+                        <a href="">TOUR NƯỚC NGOÀI<i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down"></i></a>
+                        <div class="menu_child menu_child--nuocNgoai">
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU Á</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Hàn Quốc</a></li>
+                                    <li><a href="">Du lịch Nhật Bản</a></li>                               
+                                </ul>
+                            </div>   
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU ÂU</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Anh</a></li>
+                                    <li><a href="">Du lịch Nga</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU MỸ</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch Canada</a></li>
+                                    <li><a href="">Du lịch Mỹ</a></li>
+                                </ul>
+                            </div> 
+                            <div class="menu_child_item">
+                                <a href="">DU LỊCH CHÂU ÚC</a>
+                                <ul class="menu_list">
+                                    <li><a href="">Du lịch New Zealand</a></li>
+                                    <li><a href="">Du lịch Úc</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="header_nav_item"><a href="tinTuc.html">TIN TỨC</a></li>
+
+                    <li class="header_nav_item"><a href="lienHe.html">LIÊN HỆ</a></li>
+
+                    <li class="header_nav_item">
+                        <i class="fas fa-search search_icon"></i>
+                        <div class="menu_child menu_child--search">
+                            <div class="menu_child_item">
+                                <ul class="menu_list">
+                                    <li class="search_block">
+                                        <button class="Select_btn" >All
+                                            <i style="margin-left: 5px; opacity: 0.5; " class="fas fa-angle-down"></i>
+                                            <div class="menu_child--select">
+                                                <div class="menu_child_item_select">
+                                                    <ul class="menu_list_select">
+                                                        <li><a href="">All</a></li>
+                                                        <li><a href="">Du lịch nước ngoài</a></li>
+                                                        <li><a href="">Du lịch trong nước</a></li>        
+                                                        <li><a href="">Khách sạn</a></li>                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <input placeholder="Tìm kiếm" type="text">
+                                        <!-- Bỏ label sau khi hoàn thiện tính năng -->
+                                        <button><label for="checkbox-sorry" class="fas fa-search"></label></button>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </li>
+
+                    <li class="header_nav_item"><a href="dangNhap.html">ĐĂNG NHẬP</a></li>
+
+
+                    <li class="header_nav_item" style="color: #dddddd;">|</li>
+
+                    <li class="header_nav_item">
+                        <i class="fas fa-shopping-cart shopping-icon"><div class="numberCart"></div></i>
+                    </li>
+
+                    
+                    <li class="header_nav_item">
+                        <div class="avatar-container"></div>
+                        <div class="menu_child menu_child--dangXuat">
+                            <div class="menu_child_item">
+                                <button class="dangXuat__btn">Đăng Xuất</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="shopping-icon shopping-icon--responsive"><i class="fas fa-shopping-cart "><div class="numberCart"></div></i></div>
+
+
+            <!-- Nav responsive content start-->
+                <label for="nav_checkbox" class="nav__overlay"></label >
+                <div class="nav-menu--responsive">
+                    <div class="menu_child_item menu_child_item--responsive">
+                                <ul class="menu_list menu_list--responsive">
+                                    <li class="search_block">
+                                        <button class="Select_btn" >All
+                                            <i style="margin-left: 5px; opacity: 0.5; " class="fas fa-angle-down"></i>
+                                            <div class="menu_child--select">
+                                                <div class="menu_child_item_select">
+                                                    <ul class="menu_list_select">
+                                                        <li><a href="">All</a></li>
+                                                        <li><a href="">Du lịch nước ngoài</a></li>
+                                                        <li><a href="">Du lịch trong nước</a></li>        
+                                                        <li><a href="">Khách sạn</a></li>                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <input placeholder="Tìm kiếm" type="text">
+                                        
+                                        <button><i class="fas fa-search"></i></button>
+                                    </li>
+                                </ul>
+                    </div> 
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a href="index.html">TRANG CHỦ</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="introduce.html">GIỚI THIỆU</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="">TOUR NỘI ĐỊA </a>
+                            <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down nav_icon--responsive1 "></i>
+                        </li>
+
+                        <li class="nav-menu__item nav-menu__item--noiDia-hidden hidden">
+                                <div class="menu_child2--noiDia">
+                                    <div >
+                                        <a href="">DU LỊCH MIỀN BẮC</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Hà Nội</a></li>
+                                            <li><a href="">Du lịch Sa Pa</a></li>
+                                            <li><a href="">Du lịch Hạ Long</a></li>    
+                                        </ul>
+                                    </div>   
+                                    <div >
+                                        <a href="">DU LỊCH MIỀN TRUNG</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Nha Trang</a></li>
+                                            <li><a href="">Du lịch Đà Nẵng</a></li>
+                                        </ul>
+                                    </div>
+                                    <div >
+                                        <a href="">DU LỊCH MIỀN NAM</a>
+                                        <ul>
+                                            <li><a href="">Du lịch Phú Quốc</a></li>
+                                            <li><a href="">Du lịch Côn Đảo</a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="">TOUR NƯỚC NGOÀI</a>
+                            <i style="margin-left: 5px; opacity: 0.5;" class="fas fa-angle-down nav_icon--responsive2 "></i>
+                        </li>
+
+                        <li class="nav-menu__item nav-menu__item--nuocNgoai-hidden hidden">
+                            <div class="menu_child2">
+                                <div>
+                                    <a href="">DU LỊCH CHÂU Á</a>
+                                    <ul>
+                                        <li><a href="">Du lịch Hàn Quốc</a></li>
+                                        <li><a href="">Du lịch Nhật Bản</a></li>                               
+                                    </ul>
+                                </div>   
+                                <div>
+                                    <a href="">DU LỊCH CHÂU ÂU</a>
+                                    <ul>
+                                        <li><a href="">Du lịch Anh</a></li>
+                                        <li><a href="">Du lịch Nga</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="">DU LỊCH CHÂU MỸ</a>
+                                    <ul>
+                                        <li><a href="">Du lịch Canada</a></li>
+                                        <li><a href="">Du lịch Mỹ</a></li>
+                                    </ul>
+                                </div> 
+                                <div>
+                                    <a href="">DU LỊCH CHÂU ÚC</a>
+                                    <ul>
+                                        <li><a href="">Du lịch New Zealand</a></li>
+                                        <li><a href="">Du lịch Úc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="tinTuc.html">TIN TỨC</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="lienHe.html">LIÊN HỆ</a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a href="dangNhap.html">ĐĂNG NHẬP</a>
+                        </li>
+                    </ul>
+                </div>
+                <label for="nav_checkbox" class="nav_icon-close"><i class="fas fa-times"></i></label >
+            <!-- nav responsive content end -->
+            </div>
+        </nav>     
+    </header>
+    <main>
+        <div class="content">
+            
+            <div class="main_content">
+                <div class="new new--0 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Tất tần tật những kinh nghiệm bạn cần biết trước khi du lịch Bình Ba</h1>
+                    </div>
+                    <img src="https://dulichsaigonnew.com/Content/1dulichsaigonnew/binh%20hung%2014.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <h2>Giới thiệu sơ lượt về đảo Bình Ba</h2>
+                        <p>Bình Ba là một đảo nhỏ, diện tích trên 3km2, thuộc xã Cam Bình, thành phố Cam Ranh, tỉnh Khánh Hòa. 
+                            Cách Nha Trang 60 km, cách thành phố Hồ Chính Minh tầm 390km. 
+                            Muốn đến Bình Ba, bắt buộc chúng ta phải đến cảng Ba Ngòi. Cảng Ba Ngòi cách sân bay Cam Ranh 15km, Bình Ba cách cảng Ba Ngòi cũng 15km.
+                        </p>
+                        <p>Trước đây, Bình Ba là đảo quân sự, hạn chế dân ở ngoài vào đảo. 
+                            Bây giờ, luật lệ đã được nới lỏng, nhưng vẫn cấm người ngoại quốc. Đây cũng là lý do, vì sao bây giờ đảo Bình Ba mới nổi tiếng! 
+                            Ngoài ra, nếu không muốn bị đuổi khỏi đảo sớm, bạn cũng không nên tò mò đến những vùng bị quân đội cấm hoặc có những hành động gây rối, quá khích.
+                        </p>
+                        <img src="https://cdn3.ivivu.com/2014/07/kinh-nghiem-du-lich-binh-ba-ivivu.jpg" alt="">
+                        <p class="cre_img">Toàn cảnh đảo Bình Ba. Ảnh: lanbienxanh.vn.</p>
+                        <img src="" alt="">
+                        <p class="cre_img"></p>
+                        <p>Vì được quân đội quản lý khá kỹ, nên Bình Ba vẫn là một đảo tương đối hoang sơ, thiên nhiên vẫn còn giữ được nét mộc mạc, 
+                            chưa bị con người tàn phá. Dạo gần đây, với lượng khách kéo về Bình Ba ngày càng nhiều, 
+                            hạ tầng cơ sở chưa phát triển theo kịp với lượng khách đến, khiến môi trường ở đảo không còn trong trẻo như thuở nào.
+                        </p>
+                        <h2>Nên du lịch Bình Ba vào thời điểm nào?</h2>
+                        <p>Bạn có thể du lịch Bình Ba lúc nào bạn muốn, nhưng lý tưởng nhất vẫn là từ tháng 3 đến tháng 9. Bên cạnh đó, bạn cũng nên cố gắng đến Bình Ba vào ngày thường, 
+                            bởi ngày lễ tết lượng khách đổ về đây cực đông, làm bạn khó mà thưởng thức hết vẻ đẹp của đảo. Ngoài ra, để không phải chụp giật, bạn cũng nên dành ra khoảng trên 2 ngày ở trên đảo.
+                        </p>
+                    </div>
+                </div>  
+
+
+                <div class="new new--1 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Vì sao bạn phải đến Đài Loan một lần trong đời?</h1>
+                    </div>
+                    <img src="http://divui.com/blog/wp-content/uploads/2018/05/kinh-nghiem-du-lich-dai-loan-cover.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <img src="https://cdn3.ivivu.com/2017/12/vi-sao-ban-phai-den-dai-loan-mot-lan-trong-doi-ivivu-1.jpg" alt="">
+                        <p class="cre_img">Khung cảnh tuyệt đẹp: Đài Loan được bao phủ bởi màu xanh của cây cối và rừng nhiệt đời. Thủ phủ Đài Bắc nằm giữa những dãy núi, với công viên quốc gia Dương Minh Sơn cách đó chưa đầy 12 km. Cảnh quan mỗi vùng trên đảo biến đổi khác lạ, có đủ núi non hùng vĩ và bãi cát trắng mịn. Ảnh: Taiwan.</p>
+                        <img src="https://cdn3.ivivu.com/2017/12/vi-sao-ban-phai-den-dai-loan-mot-lan-trong-doi-ivivu-2.jpg" alt="">
+                        <p class="cre_img">Nhiều lễ hội sôi động: Đài Loan có vô số lễ hội và dịp kỷ niệm diễn ra quanh năm, từ lễ hội đèn lồng, đua thuyền rồng đến lễ hội kinh khí cầu, cùng nhiều lễ hội truyền thống khác. Ảnh: CNTraveler.</p>
+                    </div>
+                </div>
+
+
+                <div class="new new--2 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Du lịch Nha Trang: 10 điểm du lịch tham quan hấp dẫn nhất</h1>
+                    </div>
+                    <img src="IMG/tour-img/nhatrang_girl.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <h2>1. Vinpearl Land</h2>
+                        <p>Toạ lạc trên đảo Hòn Tre với những bãi biển trong xanh quanh năm, 
+                            Vinpearl Land được biết đến như “thiên đường của miền nhiệt đới”. 
+                            Ngoài những khách sạn sang trọng, những khu vườn tuyệt đẹp, hồ bơi nước ngọt
+                            lý tưởng, nơi này còn thu hút du khách với khu trò chơi cảm giác mạnh và những rạp chiếu phim 4D hoành tráng. Vé tham quan đảo bao gồm vé cáp treo và chơi trò chơi: 600.000VND/người lớn; 350.000VND/trẻ em (1,0m - 1,4m).
+                        </p>
+                        <p>Di chuyển: Bằng cáp treo hoặc ca nô từ trung tâm thành phố Du lịch Nha Trang.</p>
+                        <p>Thời gian tham quan, tắm biển và nghỉ ngơi: Tối thiểu 1 ngày.</p>
+                        <img src="https://cdn3.ivivu.com/2012/06/Nhatrang-IVIVU.jpg" alt="">
+                        <p class="cre_img">Các trò chơi cảm giác mạnh ở Vinpearl Land Nha Trang. Ảnh: ST</p>
+                        <h2>2. Đảo Hòn Mun</h2>
+                        <img src="https://cdn3.ivivu.com/2012/06/tour-du-lich-nha-trang-IVIVU.jpeg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="new new--3 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Khám phá 6 tiểu sa mạc tuyệt đẹp qua ảnh check-in của giới trẻ Việt</h1>
+                    </div>
+                    <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-11.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-1.jpg" alt="">
+                        <p class="cre_img">Đồi cát Mũi Né (Bình Thuận): Trải dài trên phần lớn diện tích của Bình Thuận với quy mô ngày càng lan rộng, Mũi Né là một trong những thiên đường cát lớn nhất ở Việt Nam. Do gió bào mòn, thổi bay lớp cát mỏng manh phía trên nên địa hình nơi đây luôn thay đổi, trù phú theo thời gian. Bởi lẽ đó, quần thể Mũi Né còn được biết đến với cái tên đồi cát bay. Ảnh: Lam.nhinguyen.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-2.jpg" alt="">
+                        <p class="cre_img">Dù hiện tượng sa mạc hóa và sạt lở của bờ biển đang diễn ra nghiêm trọng, Mũi Né vẫn luôn là chốn lui tới hàng đầu của những bạn trẻ đam mê nhiếp ảnh bởi phông nền sống ảo “không góc chết”. Trong đó, cồn cát Bàu Trắng là một trong những điểm tham quan chính và hấp dẫn du khách. Ảnh: Quỳnh Anh.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-3.jpg" alt="">
+                        <p class="cre_img">Được kiến tạo từ mỏ sắt từng tồn tại hàng trăm năm, đồi cát ở khu vực này có đến 18 màu khác nhau như vàng, trắng, hồng, đỏ… Đây cũng chính là chất liệu để làm nên tác phẩm nghệ thuật tranh cát độc đáo. Dưới ánh nắng chói chang, rực rỡ, khung cảnh thiên nhiên hiện lên lung linh, mơ mộng với những triền cát trải dài ngút mắt nổi bật dưới bầu trời cao vời, xanh ngắt. Nhiều bạn trẻ không tiếc lời khi ví cung đường nơi đây như trong những thước phim của Hollywood. Ảnh: Tramynguyen129.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-4.jpg" alt="">
+                        <p class="cre_img">Đồi cát Mũi Dinh (Ninh Thuận): Di chuyển từ trung tâm thành phố Phan Rang - Tháp Chàm (Ninh Thuận) khoảng 30 km theo hướng nam, khung cảnh hiện ra trước mắt bạn là bãi cát vàng, những hòn núi đá nhấp nhô, tạo nên không gian bí ẩn, hoang vu, hấp dẫn đến lạ. Ảnh: Lê Hà Trúc.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-5.jpg" alt="">
+                        <p class="cre_img">Từng là nơi hoang sơ, vắng vẻ, bối cảnh chính trong bộ phim Dấu chân du mục dần thu hút khách du lịch nhiều hơn trong thời gian gần đây bởi vẻ đẹp huyền ảo hiện lên trên mỗi bức hình. Ngoài ra, điều khiến nhiều người thích thú ở đồi cát Mũi Dinh chính là trải nghiệm đáng nhớ khi dạo quanh sa mạc bằng chiếc máy cày của người dân địa phương. Ảnh: Lê Hà Trúc.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-6.jpg" alt="">
+                        <p class="cre_img">Đồi cát Mũi Đôi (Khánh Hòa): Trên dải đất của miền Nam Trung Bộ đầy nắng gió, đồi cát Mũi Đôi là một trong những cung đường được nhiều phượt thủ yêu thích trong hành trình chinh phục cực Đông Tổ quốc. Băng qua những cồn cát trong thời tiết nóng gay gắt thực sự là một thử thách khó khăn đối với bất cứ ai. Nhưng khi bạn dừng chân, nhìn ngắm tiểu sa mạc hoang sơ, phóng tầm mắt ra xa là biển xanh, nắng vàng rực rỡ, mọi mệt mỏi trong hành trình dường như biến mất, thay vào đó là cảm giác vỡ òa sung sướng trước cảnh đẹp thiên nhiên. Ảnh: Noodlet287.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-7.jpg" alt="">
+                        <p class="cre_img">Đồi cát Nam Cương (Ninh Thuận): Cách thành phố Phan Rang khoảng 8 km về phía đông nam, đồi cát Nam Cương là địa điểm chưa được khai thác du lịch nhiều. Có lẽ, chính vẻ bình dị và mộc mạc đó đã hấp dẫn nhiều vị khách đến đây. Bạn có thể thử cảm giác bước đi trên đồi cát mịn màng như nhung để sớm mai, ngọn gió biển làm tan biến những dấu chân trần để lại. Ảnh: _iamkoo5.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-8.jpg" alt="">
+                        <p class="cre_img">Thời điểm đẹp nhất để tham quan đồi cát Nam Cương vào lúc 5-7h và 15h-18h mỗi ngày . Khi đó, gió dịu nhẹ, nền cát còn mát cũng như đã nguội, không khí dễ chịu hơn. Những đồi cát nhiều tầng lớp, nối nhau, trải dài ra bờ biển Đông Hải, ngút tầm mắt đến tận dãy núi huyền thoại Chà Bang. Sự xếp đặt tài hoa của thiên nhiên đã tạo nên một tác phẩm nghệ thuật độc đáo cho miền quê người Chăm sinh sống. Ảnh: Anna.annabella.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-9.jpg" alt="">
+                        <p class="cre_img">Đồi cát Phương Mai (Bình Định): Là một trong những đồi cát đẹp nhất miền Trung, nằm cạnh bãi biển Nhơn Lý mộng mơ, Phương Mai là điểm dừng chân thú vị nếu bạn có dịp ghé thăm đất võ Bình Định. Nơi đây, mỗi thời điểm mang một vẻ đẹp khác nhau. Lúc Mặt Trời lên cao nhất trong ngày, bạn sẽ được chiêm ngưỡng khung cảnh bao phủ một màu vàng ruộm, rực rỡ, ló rạng hay khuất bóng trên đồi cát đẹp đến nao lòng. Ảnh: Dip_db.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-10.jpg" alt="">
+                        <p class="cre_img">Đồi cát Quang Phú (Quảng Bình): Ngoài những địa danh nổi tiếng như động Thiên Đường, suối nước Mọc, sông Chày hang tối… Quang Phú là thiên đường cát lý tưởng để check-in, sống ảo tuyệt vời cho những người yêu thích nhiếp ảnh. Đến đây, bạn sẽ bị cuốn hút bởi vẻ đẹp tĩnh lặng, hoang sơ mà chẳng kém phần quyến rũ. Ảnh: Thùy Linh.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-11.jpg" alt="">
+                        <p class="cre_img">Điểm đặc biệt hấp dẫn du khách nhất có lẽ là sự thay đổi kỳ diệu về màu sắc của cát theo thời gian ở đây. Cát trắng tinh bao phủ nơi này trong một sớm bình minh. Khi Mặt Trời lên cao, màu cát vàng rực, đến xẩm tối lại chuyển sang xám trắng. Ảnh: Trang Lê.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-12.jpg" alt="">
+                        <p class="cre_img">Những đường vân cát thay đổi liên tục, uốn lượn như sóng biển, trải dài như thảm lụa bay trong gió trên ngọn đồi có độ cao gần 10 m, thấp thoáng xa xăm màu xanh của bụi cây dại, màu nâu trầm của những cành cây khô… Tất cả đã tạo nên khung cảnh thiên đường cát hùng vĩ, bao la, thu hút du khách khi ghé thăm Quảng Bình. Ảnh: Trương Hoàng Mai Anh.</p>
+                    </div>
+                </div>  
+
+
+                <div class="new new--4 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Ba nhà thờ hút khách nhờ sơn màu hồng dọc miền đất nước</h1>
+                    </div>
+                    <img src="http://mauweb.monamedia.net/altair/wp-content/uploads/2018/12/tandinh.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <img src="http://mauweb.monamedia.net/altair/wp-content/uploads/2018/12/tandinh.jpg" alt="">
+                        <p class="cre_img">Nhà thờ Tân Định có tên gọi chính thức là Nhà thờ Thánh Tâm Chúa Giêsu. Đây là nhà thờ Công giáo tọa lạc trên đường Hai Bà Trưng (quận 3, TP HCM). Khởi công vào năm 1870 và hoàn thành 6 năm sau đó, nhà thờ được xây dựng theo lối kiến trúc Gothic nhưng các chi tiết lại mang phong cách Roman và Baroque. Dù đã trải qua nhiều lần tu sửa, màu sắc ban đầu vẫn luôn được giữ lại. Nhờ màu hồng khác lạ mà nhà thờ thu hút không ít du khách ghé thăm. Ảnh: Phong Vinh.</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-2.jpg" alt="">
+                        <p class="cre_img">Công trình có một tháp chính và hai tháp phụ. Tháp chính có độ cao 52,6 m; trên đỉnh có gắn một cây thánh giá cao 3 m, bên trong là 5 quả chuông có tổng trọng lượng là 5,5 tấn. Hai tháp phụ có nhiều cửa sổ với hoa văn tinh tế. Ảnh: Phong Vinh.</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-3.jpg" alt="">
+                        <p class="cre_img">Thánh đường bên trong khá bề thế với hai hàng cột đậm nét kiến trúc Gothic. Cùng với mặt tiền, hai hàng cột này được đánh giá là một trong những nét đẹp nhất của cả công trình. Bệ thờ bên trong được làm từ đá cẩm thạch mang từ Italy sang. Ảnh: Phong Vinh.</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-4.jpg" alt="">
+                        <p class="cre_img">Nhà thờ Domaine de Marie còn có tên khác là Mai Anh, do công trình nằm trên ngọn đồi mọc đầy hoa mai anh đào ở Đà Lạt. Đây không chỉ là nơi sinh hoạt tôn giáo mà còn là điểm du lịch nổi tiếng. Từ đây, du khách có thể phóng tầm mắt ra nhiều phía để ngắm thành phố sương mù. Ảnh: Hồng Hà.</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-5.jpg" alt="">
+                        <p class="cre_img">Nhà thờ được xây trên mảnh đất có tổng diện tích là 12 ha, cách trung tâm Đà Lạt khoảng một km về phía tây nam. Công trình kiến trúc này được xây dựng theo phong cách châu Âu kết hợp với kiến trúc của dân tộc thiểu số bản địa vùng Tây Nguyên. Mặt tiền nhà thờ có hình như một tam giác cân, trên đỉnh nhọn của mái gắn một cây thánh giá, phía trước được tô điểm bởi các cửa vòm nhỏ hình lưỡi mác. Ảnh: Hồng Hà.</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-6.jpg" alt="">
+                        <p class="cre_img">Xây dựng vào những năm 1940, công trình được hoàn thành nhờ số tiền do bà Suzanne Humbert, phu nhân toàn quyền Đông Dương Jean Decoux, đứng ra quyên góp từ giáo dân. Trước năm 1975, nhà thờ còn nổi tiếng với các hoạt động chăm sóc trẻ mồ côi với sự tham gia của hơn 50 nữ tu. Hiện tại, các công tác xã hội như chăm sóc trẻ em chậm phát triển, giúp đỡ trẻ mồ côi, chữa bệnh cho người nghèo… vẫn thường xuyên diễn ra tại nhà thờ. Du khách có thể tham quan nhà thờ vào bất kỳ thời gian nào trong ngày, đẹp nhất là sáng sớm hoặc lúc hoàng hôn. Ảnh: Hồng Hà.</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-7.jpg" alt="">
+                        <p class="cre_img">Nhà thờ Tourane (thời Pháp thuộc) hay còn gọi là nhà thờ Thánh Tâm Chúa Giêsu hoặc nhà thờ Chính tòa, được khởi công từ tháng 2/1923 trên khoảng đất trống đường Rue du Musée (nay là đường Trần Phú, Đà Nẵng) do linh mục Vallet thiết kế và chủ trì xây dựng. Người dân địa phương hay gọi công trình bằng một cái tên gần gũi là nhà thờ Con Gà bởi trên nóc nhà thờ có tượng con gà màu xám rất đặc trưng. Ảnh: lanabek_88</p>
+                        <img src="https://cdn3.ivivu.com/2018/10/ba-nha-tho-hut-khach-nho-son-mau-hong-doc-mien-dat-nuoc-ivivu-8.jpg" alt="">
+                        <p class="cre_img">Nhà thờ có kiến trúc Gothique với những đường nét cao vút, các vòm cửa hình quả trám, khung kính mô tả lại những sự kiện tiêu biểu trong Kinh thánh. Nơi đây được nhiều du khách nước ngoài ghé thăm và check-in khi đến Đà Nẵng. Ảnh: @xhana1023x</p>
+                    </div>
+                </div>
+
+                <div class="new new--5 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Du lịch Vũng Tàu: Cẩm nang từ A đến Z</h1>
+                    </div>
+                    <img src="https://media.mia.vn/uploads/blog-du-lich/cho-chuyen-di-them-dang-nho-voi-cac-phuong-tien-di-chuyen-tu-tp-hcm-den-vung-tau-tien-loi-1634623422.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <h2>Tổng quan du lịch Vũng Tàu</h2>
+                        <p>Cách trung tâm thành phố Hồ Chí Minh chỉ khoảng 3 tiếng lái xe, với đường bờ biển trải dài 20km, Vũng Tàu là một trong những điểm đến yêu thích của du khách phía Nam. Nằm nhô hẳn ra khỏi đất liền như một dải đất, từ nơi đây, người ta có thể nhìn biển Đông cả khi trời mọc lẫn lúc hoàng hôn. Bên cạnh những giá trị cảnh quan thiên nhiên, Vũng Tàu còn là miền đất có truyền thống văn hóa lịch sử lâu đời.</p>
+                        <img src="https://cdn3.ivivu.com/2014/10/Du-lich-vung-tau-cam-nang-tu-a-den-z-iVIVU.com-1-1024x427.jpg" alt="">
+                        <p class="cre_img">Vẻ đẹp của du lịch Vũng Tàu. Ảnh: dulichgiahy</p>
+                        <p>Đến với Vũng Tàu bạn sẽ có cảm giác bình yên, dễ chịu với những con đường rộng rãi, thoáng đãng. Dưới là biển xanh, trên là những ngọn núi to, núi nhỏ, cùng những ngôi chùa thanh tịnh… Tất cả tạo nên một Vũng Tàu đầy ma lực, một thành phố Vũng Tàu không chỉ hiền hòa bình dị mà còn vô vàn những danh lam thắng cảnh nổi tiếng.</p>
+                        <h2>Khí hậu</h2>
+                        <p>Bà Rịa - Vũng Tàu thuộc vùng khí hậu nhiệt đới gió mùa, một năm chia hai mùa rõ rệt: Mùa mưa bắt đầu từ tháng 5 đến tháng 10, thời gian này có gió mùa Tây Nam; mùa khô bắt đầu từ tháng 11 đến tháng 4 năm sau, thời gian này có gió mùa Đông Bắc. Nhiệt độ trung bình hàng năm là 27°C, tháng thấp nhất khoảng 24,8°C, tháng cao nhất khoảng 28,6°C.</p>
+                        <h2>Thời điểm du lịch Vũng Tàu</h2>
+                        <p>Ở Vũng Tàu quanh năm là mùa du lịch vì nhiệt độ không khi nào quá lạnh hay quá nóng. Bạn chỉ cần theo dõi bản tin dự báo thời tiết để tránh du lịch Vũng Tàu khi có mưa bão. Ngoài ra, vào ngày cuối tuần và các dịp lễ tết, Vũng Tàu thu hút rất đông khách du lịch, giá cả các dịch vụ đều tăng cao.</p>
+                    </div>
+                </div>
+
+                <div class="new new--6 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>5 khu nghỉ dưỡng Đà Lạt giá rẻ bạn nên cân nhắc trong dịp tết dương lịch này</h1>
+                    </div>
+                    <img src="http://mauweb.monamedia.net/altair/wp-content/uploads/2018/12/dalat.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <h2>1. Vinpearl Land</h2>
+                        <p>Nằm yên bình trên đường Hoa Hồng trong khu du lịch Hồ Tuyền Lâm, khu nghỉ dưỡng Đà LạtWonder được bao bọc giữa những rừng thông xanh, với khí hậu ôn hòa mát mẻ và sở hữu không gian vô cùng thơ mộng.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/dalat-wonder-resort-ivivu-8.jpg" alt="">
+                        <p>Với lối thiết kế thật ấn tượng, hồ bơi của khu nghỉ dưỡng Đà Lạt Wonder là một trong những điểm nhấn của nơi đây. Với view hướng thẳng ra hồ Tuyền Lâm và những đồi thông xanh ngắt, từ hồ bơi bạn có thể thu trọn khung cảnh vừa thơ mộng vừa hùng vĩ của thiên nhiên trong tầm mắt. Hay bạn có thể vừa đắm mình vào làn nước tươi mát trong khi nhấm nháp những ngụm cocktail thơm ngon mà không sợ bất kỳ ai làm phiền. Bên cạnh hồ lớn là hai hồ Jacuzzi nhỏ cho những ai muốn ngâm mình vào làn nước ấm.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/dalat-wonder-resort-ivivu-3.jpg" alt="">
+                        <p>Được bao quanh bởi các ngọn đồi, Swiss-Belresort Tuyền Lâm sở hữu một cảnh quan đặc biệt và một không khí trong lành. Cùng với kiến trúc Anglo-Normand theo phong cách vùng miền quê Anh-Pháp, nằm gọn giữa một sân golf 18 lỗ, đã tạo nên điểm nhấn để từ đây khách có thể nhìn ngắm trong khi đi dạo quanh các đường golf.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/Swiss-Belresort-tuyen-lam-ivivu-11.png" alt="">
+                        <p>Swiss-Belresort Tuyền Lâm giống như một ốc đảo đầy hoa được bao phủ bởi thiên nhiên đẹp lãng mạn đến say lòng người. Từ mỗi ô cửa sổ của tất cả phòng trong resort, những cảnh quan như trong những câu chuyện thần tiên mở ra thênh thang với những cánh rừng thông xanh ngát trải dài đến tận mặt nước hồ. Tiếng chim hót véo von đâu đó trên những cành cây cao và không khí trong lành mát mẻ quanh năm của Đà Lạt cũng góp phần làm cho Swiss-Belresort Tuyền Lâm trở thành một nơi hoàn hảo để cảm thụ về vẻ đẹp của thành phố ngàn hoa.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/Swiss-Belresort-tuyen-lam-ivivu-9.png" alt="">
+                        <p>Nằm bên bờ Hồ Tuyền Lâm - một trong những thắng cảnh nổi tiếng ở Đà Lạt, khu nghỉ dưỡng Đà Lạt Terracotta ẩn hiện trong màn sương mờ ảo của buổi sớm mai như một phân khu nghỉ dưỡng đẳng cấp, sang trọng. Khối kiến trúc ở Terracotta Đà Lạt được thiết kế hài hòa với thiên nhiên, mang đậm phong cách phương Tây được che phủ bên dưới những tán lá thông xanh mướt tạo nên một công trình kiến trúc khác biệt.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/Terracotta-da-lat-ivivu-2.jpg" alt="">
+                        <p class="cre_img">Ảnh: 张涵琳</p>
+                        <p>Điểm cộng của khu nghỉ dưỡng Terracotta Đà Lạt là khuôn viên rất rộng và các khối nhà được bao quanh bởi cây xanh nên vô cùng mát mẻ đồng thời có quá nhiều góc đẹp để phục vụ nhu cầu chụp ảnh cưới. Tuy không gần trung tâm Đà Lạt nhưng bù lại resort có xe bus chạy ra chợ Đà Lạt nhiều chuyến mỗi ngày, rất tiện cho việc đi vui chơi, thăm quan.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/Terracotta-da-lat-ivivu-4.png" alt="">
+                        <p class="cre_img">Ảnh: nguyenanh29588</p>
+                        <p>Sở hữu vị trí tuyệt đẹp ngay bên hồ Tuyền Lâm, Edensee Lake Resort & Spa là một trong những khu resort 5 sao có không gian đẹp nhất Đà Lạt với một bên là rừng thông, một bên là hồ Tuyền Lâm. Khu nghỉ dưỡng được thiết kế như một ngôi làng châu Âu với lối kiến trúc hiện đại, phòng thoáng, view rộng nhưng vẫn hòa hợp với thiên nhiên.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/densee-ivivu-1.jpg" alt="">     
+                        <p>Sát ngay bên bờ hồ Tuyền Lâm thơ mộng và dịu dàng, Edensee Lake Resort & Spa Đà Lạt có khu khách sạn và khu biệt thự, được xây theo phong cách châu Âu rất đẹp và tinh tế, phòng thoáng, view rộng. Khung cảnh xung quanh cũng rất nên thơ với những hàng thông xanh rì, thẳng tắp tỏa bóng mát trên tất cả những con đường nhỏ nối liền các khu trong resort.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/densee-ivivu-12.png" alt="">     
+                        <p class="cre_img">Ảnh: haodong1606</p>
+                        <p>Ẩn mình trên ngọn đồi thông xanh mướt là những căn biệt thự mang kiến trúc Pháp cổ kính được xây dựng từ những năm 1920 và 1930 thuộc Ana Mandara Villas Đà Lạt Resort & Spa. Không đơn thuần là một khu nghỉ dưỡng, Ana Mandara mang trong mình những giá trị lịch sử về một Đà Lạt xưa, thuở mới được khai phá rất lý tưởng cho gia đình, trăng mật hay hội thảo với không khí trong lành, yên tĩnh bên chốn không gian cổ kính.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/anamandaravillasdalat-ivivu-7.png" alt="">     
+                        <p>Xen lẫn với nét cổ kính, vườn rau nhỏ trong khu nghỉ dưỡng trồng các loại như: húng quế, ớt, cà chua, chanh, atisô, salad… cũng góp phần tạo cho nơi đây dễ thương hơn bao giờ hết. Bạn cũng có thể rảo bước dạo quanh khu vườn, tham gia vào hoạt động chăm sóc vườn và còn gì thú vị bằng khi tự tay mình thu hoạch những nguyên liệu tươi ngon rồi quây quần cùng nhau nấu ăn và thưởng thức bữa tiệc tại phòng ăn hoặc ngoài ban công.</p>
+                        <img src="https://cdn3.ivivu.com/2018/11/anamandaravillasdalat-ivivu-10.png" alt="">     
+                    </div>
+                </div>
+
+                <div class="new new--7 "  >
+                    <div class="main_content_item2">
+                        <a href="">TIN TỨC</a>
+                        <h1>Du lịch Phú Quốc: Cẩm nang từ A đến Z</h1>
+                    </div>
+                    <img src="https://honthom.sunworld.vn/wp-content/uploads/2020/04/bai-sao-phu-quoc.jpg" alt=""> 
+                    <div class="main_content_item2">
+                        <h2>Tổng quan du lịch Phú Quốc</h2>
+                        <img src="https://cdn3.ivivu.com/2014/08/phu-quoc-island-vietnam-ivivu.jpg" alt="">
+                        <p class="cre_img">Một góc Phú Quốc (Ảnh: khoanhkhacvietnam.vn)</p>
+                        <p>Phú Quốc là quần đảo xinh đẹp nằm sâu trong vùng vịnh Thái Lan, thuộc tỉnh Kiên Giang. Ở vùng biển phía Nam của tổ quốc, đảo Ngọc Phú Quốc - hòn đảo lớn nhất của Việt Nam, cũng là đảo lớn nhất trong quần thể 22 đảo tại đây. Nước biển trong vắt, những dòng suối yên bình cùng nhiều hải sản độc đáo chính là lợi thế tuyệt vời của du lịch Phú Quốc.</p>
+                        <h2>Lên lịch du lịch Phú Quốc</h2>
+                        <p>Thời điểm đông khách du lịch nhất là từ tháng 4 đến tháng 9.</p>
+                        <img src="https://sohanews.sohacdn.com/zoom/650_413/2018/10/16/photo1539678717629-1539678717630297091217.jpg" alt="">
+                        <p>Tuy nhiên, mùa khô (tháng 10 đến tháng 3 năm sau) là thời điểm Phú Quốc đẹp nhất. Nhìn chung bạn có thể yên tâm du lịch Phú Quốc vào bất cứ thời điểm nào trong năm vì nhiệt độ trung bình năm chỉ vào khoảng 28 độ C.</p>
+                        <p>Quan trọng nhất là theo dõi dự báo thời tiết để tránh những ngày mưa bão.</p>
+                        <h2>Di chuyển: Phương tiện, di chuyển khi du lịch Phú Quốc</h2>
+                        <p>Phương tiện đến Phú Quốc chủ yếu bằng máy bay, tàu cao tốc hay phà. Dưới đây là các lựa chọn để đến Phú Quốc tùy theo từng điểm xuất phát khác nhau:</p>
+                        <p>Hà Nội - Phú Quốc: Vietnam Airlines khai thác mỗi ngày 1 chuyến bay Airbus từ Hà Nội đi Phú Quốc khởi hành lúc 8h40 và đến nơi lúc 10h45. Chuyến bay theo chiều ngược lại khởi hành từ Phú Quốc lúc 11h35 và đến nơi lúc 13h40.</p>
+                        <p>TP.HCM - Phú Quốc: Khoảng cách 500 km, có thể đi bằng máy bay hay kết hợp xe ô tô + tàu cao tốc Rạch Giá - Phú Quốc</p>
+                        <p>- Máy bay: Vietnam Airlines khai thác mỗi ngày 17 chuyến bay với máy bay ATR và 1 chuyến bay với máy bay Airbus. Viet Jet Air cùng khai thác mỗi ngày 1 chuyến bay với máy bay Air Bus. Thời gian bay là 50 phút.</p>
+                        <p>- Xe ô tô + tàu cao tốc Rạch Giá - Phú Quốc: Phương Trang, Kumho và Mai Linh là những hãng xe bus chất lượng cao chuyên chở hành khách tuyến TP.HCM - Rạch Giá và ngược lại, thời gian di chuyển là 6 đến 7 tiếng tùy vào mật độ giao thông.</p>
+                        <p>Cần Thơ - Phú Quốc: Có thể đi bằng máy bay hay kết hợp xe ô tô + tàu cao tốc Rạch Giá - Phú Quốc</p>
+                        <p>- Máy bay: Vietnam Airlines khai thác mỗi ngày 1 chuyến bay với máy bay ATR khởi hành từ Cần Thơ đi Phú Quốc lúc 13H:00 và đến nơi lúc 13:45. Chuyến bay theo chiều ngược lại khởi hành từ Phú Quốc lúc 11H:35 và đến nơi lúc 12H:20.</p>
+                        <p>- Xe ô tô + tàu cao tốc Rạch Giá - Phú Quốc: Phương Trang và Mai Linh là 2 hãng xe bus chất lượng cao chuyên chở hành khách tuyến Cần Thơ - Rạch Giá và ngược lại, thời gian di chuyển là 3 đến 3,5 tiếng tùy vào mật độ giao thông.</p>
+                        <p>Từ sân bay đi về Trung Tâm Dương Đông/khu Dinh Cậu bằng taxi mất khoảng 20 phút. Phú Quốc có 2 hãng taxi lớn nhất là SASCO và Mai Linh, cả hai hãng đều đi bằng đồng hồ đo, khá an toàn và tiện lợi cho khách du lịch.</p>
+                        <p>Rạch Giá - Phú Quốc: Khoảng cách 120 km, có thể đi bằng máy bay hay tàu cao tốc:</p>
+                        <p>- Máy bay: Vietnam Airlines khai thác mỗi ngày 1 chuyến bay từ Rạch Giá đi Phú Quốc khởi hành lúc 7h30 và đến nơi lúc 8h10. Chuyến bay theo chiều ngược lại khởi hành từ Phú Quốc lúc 8h45 và đến nơi lúc 9h25.</p>
+                        <p>Đường bộ từ TP HCM đi Rạch Giá:</p>
+                        <p>Đi từ điểm đón khách trên đường Lê Hồng Phong, Q10 có xe khách:</p>
+                        <p>- Mai Linh. ĐT: 08 39292929</p>
+                        <p>- Phương Trang. ĐT: 08 3833 3468</p>
+                        <p>Hoặc nếu khởi hành từ bến xe miền Tây có xe Kumho Samco, Ba Dũng, Tuyết Hon, Châu Hà.</p>
+                        <p>• Xe sẽ tới bến xe Rạch Giá (Kiên Giang). Giá vé khoảng: 120.000 - 150.000 VND/vé/lượt, thời gian chạy khoảng 6-7 tiếng.</p>
+                        <p>• Nên mua vé xe 45 chỗ, có thể dễ dàng ngã lưng làm một giấc ngon lành. Muốn tiết kiệm thời gian, bạn hãy chọn chuyến xe đi khoảng 10 giờ đêm, 5 giờ sáng xe sẽ đến Kiên Giang. Trước lúc xuống xe bạn nhớ hỏi anh tài xế vị trí đậu của xe trung chuyển để lên xe này đi không phải mất phí. Đừng để cánh xe ôm lôi kéo, cứ nhắm xe trung chuyển mà thẳng tiến. Khi lên xe trung chuyển, bạn nói với anh tài xế là muốn đến bến tàu đi Phú Quốc.</p>
+                        <p>- Tàu cao tốc: Hãng tàu Superdong khai thác hành trình biển Rạch Giá - Phú Quốc và ngược lại, buổi sáng khởi hành lúc 8h00 và buổi chiều khởi hành lúc 13h00, thời gian di chuyển trên biển là 2,5 tiếng.</p>
+                        <p>• Tàu Superdong: Địa chỉ: Số 14 đường Tự Do; Vĩnh Thạnh; Rạch Giá. ĐT: 077 877742 - 077 877 741.</p>
+                        <img src="https://cdn3.ivivu.com/2014/08/cam-nang-du-lich-phu-quoc-ivivu-1.png" alt="">
+                        <img src="https://cdn3.ivivu.com/2014/08/cam-nang-du-lich-phu-quoc-ivivu-2.png" alt="">
+                        <img src="https://cdn3.ivivu.com/2014/08/cam-nang-du-lich-phu-quoc-ivivu-3.png" alt="">
+                        <p>TP.HCM - Hà Tiên - Phú Quốc: Khoảng cách 45 km, có thể đi bằng tàu cao tốc hay phà</p>
+                        <p>Đường bộ từ TP HCM đi Hà Tiên: Các xe từ Sài Gòn đi Hà Tiên gồm:</p>
+                        <p>Xe Phương Trang: giá vé 170.000 VND.</p>
+                        <p>Thời gian khởi hành:
+                            * Bến xe miền Tây: 7h15, 8h45, 9h45, 18h, 18h45, 19h15.
+                            * Bến xe Hà Tiên: 8h30, 9h30, 10h30, 20h30, 21h45, 22h30.</p>
+                        <p>* Tại TP Hồ Chí Minh:
+                            - Tổng đài: 0838.309.309
+                            - VP 328A Lê Hồng Phong - Quận 10 - TP HCM
+                            - VP 260 Lê Hồng Phong - Quận 5- TP HCM.
+                            - Quầy vé 22,23, 31 Bến Xe Miền Tây - TP Hồ Chí Minh</p>
+                        <p>Xe Kumho: giá vé 190.000 VND.</p>
+                        <p>* Tuyến Hà Tiên - Tp.Hồ Chí Minh
+                            - Giờ khởi hành: 07h50, 11h00, 13h00, 20h20, 21h10, 22h30. Điện thoại đặt vé: 077.3.959797 - 077.3.959696</p>
+                        <p>* Tuyến Tp.Hồ Chí Minh - Hà Tiên
+                            - Giờ khởi hành: 09h30, 11h00, 15h30, 20h30, 21h30, 23h00. Điện thoại đặt vé: 08.3.7527878 - 08.3.9225112 - 08.3.9225113</p>
+                        <p>Xe Tuấn Nga: giá vé: 165.000 VND/vé</p>
+                        <p>* Tại TP Hồ Chí Minh:
+                            - Tổng đài: 0946 79 00 55 - 0962 57 11 99
+                            - VP 7 Phạm Hữu Chí - P.12 - Quận 5 - TP HCM.
+                            - Quầy vé Bến Xe Miền Tây - TP Hồ Chí Minh.</p>
+                        <p>* Tại Hà Tiên:
+                            - Tổng đài: 0773. 95 45 45 - 0969 19 11 77
+                            - VP tại Bến Xe Hà Tiên.</p>
+                        <p>- Phà: Khởi hành tại bến phà Thạnh Thới (Hà Tiên), dừng tại bến cảng Đá Chồng (Bãi Thơm, Phú Quốc). Phà có sức chứa lớn, có thể chở các loại ôtô. Thời gian đi phà khoảng hơn 2 giờ. Từ bến phà Đá Chồng đi vào trung tâm thị trấn Dương Đông khoảng 20km, các bạn có thể đi bằng xe đò, xe ôm (khu vực này hơi khó tìm taxi).</p>
+                        <p>- Tàu cao tốc: Tàu Superdong I và Superdong II khởi hành từ Hà Tiên đi Phú Quốc lúc 8h00 và 13h00; từ Phú Quốc đi Hà Tiên lúc 8h30 và 13h30 hàng ngày. Tàu cao tốc Hồng Tâm cũng khai thác hành trình biển này, khởi từ Hà Tiên đi Phú Quốc lúc 13h30 và từ Phú Quốc đi Hà Tiên lúc 8h30 hàng ngày. Thời gian di chuyển trên biển là 1 tiếng 20 phút. Một số tàu để bạn chọn:</p>
+                        <img src="https://cdn3.ivivu.com/2014/08/cam-nang-du-lich-phu-quoc-ivivu-5.png" alt="">
+                        
+                        
+                        <p>DI CHUYỂN TẠI PHÚ QUỐC: Có ba con đường chính:</p>
+                        <p>- Đường Trần Hưng Đạo: Con đường có nhiều khách sạn và resort nhất Phú Quốc, hầu hết đều có bãi tắm, bắt đầu từ ngã năm kéo dài đến hết bãi Trường, đến An Thới. Bạn có thể đi từ bãi tắm của resort này sang resort khác thoải mái, và chiều dài của khoảng bờ biển tự do này đến hơn 10km. Đường Trần Hưng Đạo còn là đường đi đến tham quan phòng trưng bày - Cội Nguồn, Ngọc Trai, nhà tù Phú Quốc, Hang Yến.</p>
+                        <p>- Đường 30/4 - Con đường ăn uống Phú Quốc: Có rất nhiều nhà hàng và quán ăn, bạn có thể thử hải sản ở các quán bên đường với giá tốt hơn chợ đêm. Đường này đi chùa Sùng Hưng Cổ Tự, suối Tranh, làng chài Hàm Ninh, cầu cảng Bãi Vòng. Có thể đi đường này qua An Thới để tham quan bãi Sao, bãi Khem.</p>
+                        <p>- Đường Hùng Vương: Đường này tạo ngã ba với đường 30/04. Đi thẳng đến ngã tư đầu tiên là đường Nguyễn Trung Trực quẹo trái là ra sân bay, quẹo phải là hướng đi suối Đá Bàn, vườn tiêu Khu Tượng, vườn quốc gia, Gành Dầu, đền Ông Nguyễn, khu du lịch Vũng Bầu…</p>
+                   
+                    </div>
+                </div>
+
+
+                <div >
+                    <ul class="contact-block">
+                        <li> <a id="link--fb" href="https://www.facebook.com/gom.gomVvvv/"> <i class="fab fa-facebook-f"></i>  <span>Facebook</span> </a> </li>
+                        <li> <a id="link--ins" href=""> <i class="fab fa-instagram"></i>  <span>Instagram</span>  </a> </li>
+                        <li> <a id="link--tw" href=""> <i class="fab fa-twitter"></i>  <span>Twitter</span></a> </li>
+                        <li> <a id="link--gg" href=""> <i class="fab fa-google-plus"></i> <span>Google</span> </a> </li>
+                        <li> <a id="link--yt" href=""> <i class="fab fa-youtube"></i> <span>Youtube</span> </a> </li>
+                    </ul>       
+                </div>
+            </div>
+    
+            <div class="sidebar">
+                <div class="sidebar_content">
+                    <div class="search_block search_block--TinTuc">
+                        <input  placeholder="Tìm kiếm" type="text">      
+                        <button><label for="checkbox-sorry" class="fas fa-search"></label></button>
+                    </div>
+                    <h4>BÀI VIẾT MỚI NHẤT</h4>
+
+
+                    <div class="News_box">
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="https://dulichsaigonnew.com/Content/1dulichsaigonnew/binh%20hung%2014.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="">
+                                    Tất tần tật những kinh nghiệm bạn cần biết trước khi du lịch Bình Ba
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="http://divui.com/blog/wp-content/uploads/2018/05/kinh-nghiem-du-lich-dai-loan-cover.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="">
+                                    Vì sao bạn phải đến Đài Loan một lần trong đời?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="IMG/tour-img/nhatrang_girl.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="">
+                                    Du lịch Nha Trang: 10 điểm du lịch tham quan hấp dẫn nhất
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="https://cdn3.ivivu.com/2018/11/kham-pha-6-tieu-sa-mac-tuyet-dep-qua-anh-check-in-cua-gioi-tre-viet-ivivu-11.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="">
+                                    Khám phá 6 tiểu sa mạc tuyệt đẹp qua ảnh check-in của giới trẻ Việt
+                                </a>
+                            </div>
+                        </div>
+                        <div class="News_box_item">
+                            <div class="News_img">
+                                <img src="IMG/tour-img/nhathohong.jpg" alt="">
+                            </div>
+                            <div class="News_content">
+                                <a href="">
+                                    Ba nhà thờ hút khách nhờ sơn màu hồng dọc miền đất nước
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <a href="#slider"><i class="far fa-arrow-alt-circle-up circle-up"></i></a>
+        <input type="checkbox" id="checkbox-sorry">
+      
+        <label for="checkbox-sorry" class="sory-overlay"></label>
+        <div class="SorryUser-Block">  
+            <div class="icon-box">
+            <label for="checkbox-sorry" class="fas fa-times close-sorry"></label>
+            </div>
+            
+            <h2>Sự Cố <i class="fas fa-exclamation-triangle"></i></h2>
+            <p>Ôi không!!! Hệ thống của chúng tôi đang gặp sự cố 
+                hoặc tính năng này đang trong giai đoạn phát triển.</p>
+                <p> Chúng tôi thành thật xin lỗi vì sự bất tiện này.</p>
+            <img src="IMG/logo/sorry.png" alt="">
+        </div>
+     </main>
+     <footer>
+        <div class="footer">
+            <div class="footer_fill">
+                <div class="footer_input">
+                    <img src="IMG/logo/tranf.png" alt="">
+                    <p>Đăng kí để không bỏ lỡ bất kì ưu đãi nào</p>
+                    <div class="footer_input_form">
+                        <input type="text">
+                        <button>GỬI</button>
+                    </div>
+                </div>
+                <div class="footer_contact">
+                    <p>Liên Hệ</p>
+                    <ul class="footer_contact_list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>85,Mỹ Phú,H.Châu Phú,An Giang</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>03.9999.9999</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Vib1910023@student.ctu.edu.vn</span>
+                        </li>
+                    </ul>
+                    <div class="footer_contact_icon">
+                        <ul>
+                            <li> <a href="https://www.facebook.com/gom.gomVvvv/"> <i class="fab fa-facebook-f"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-instagram"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-twitter"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-google-plus"></i>  </a> </li>
+                            <li> <a href=""> <i class="fab fa-youtube"></i>  </a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer_img">
+                    <p>Tour Phổ Biến</p>
+                    <div>
+                        <ul class="footer_img_list">
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/victoria_hotel.png" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/resort--phanthiet.png" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/nhaatrang.webp" alt=""></a></li>
+                            <li><a class="footer__img--ks" href="khachSan.html"><img src="IMG/tour-img/hotram-hotel.png" alt=""></a></li>
+                            <li><a class="footer__img--tour" href="khachSan.html"><img src="IMG/tour-img/canada.jpg" alt=""></a></li>
+                            <li><a class="footer__img--tour" href="khachSan.html"><img src="IMG/tour-img/los angeles.jpg" alt=""></a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
+
+
+
+<script src="JS/renderPageKS.js"> </script>
+<script src="JS/renderPageTour.js"></script>
+<script src="JS/renderPageTinTuc.js"></script>
+<script src="JS/tinTuc.js"></script>
+<!-- Có link này mới hiện số và click vào giỏ hàng được -->
+<script src="JS/CartItem.js"></script>
+<script>
+    /*-------------------------------------Nav_responsive-start----------------------------------------- */
+    var iconclick1 = document.querySelector('.nav_icon--responsive1');
+    var item1 = document.querySelector('.nav-menu__item--noiDia-hidden');
+    var iconclick2 = document.querySelector('.nav_icon--responsive2');
+    var item2 = document.querySelector('.nav-menu__item--nuocNgoai-hidden');
+
+
+    iconclick1.onclick = function (){
+    item1.classList.toggle('hidden');
+    }
+    iconclick2.onclick = function (){
+    item2.classList.toggle('hidden');
+    }
+/*---------------------------------------NAV_responsive-end----------------------------------------------------- */
+</script>
+</body>
+</html>

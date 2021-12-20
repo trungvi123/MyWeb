@@ -1,0 +1,318 @@
+main {
+    height: auto;
+    background: none;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.header_nav_box_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_nav {
+    height: 161px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+/* phủ màn đen*/
+.header_nav--fill {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_nav_box {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.content_img {
+    width: 542px;
+    padding: 0 15px;
+}
+
+.content_text {
+   width: 388px;
+   padding: 10px 15px 30px;
+}   
+
+.content_img_box {
+    width: 512px;
+}
+
+.content_img_box img {
+    width: 100%;
+}
+
+
+.content_text--head {
+    color:#1c1c1c;
+    font-size:2rem;
+    font-weight:700;
+    line-height:3.5rem;
+    margin:0px 0px 13.6px;
+}
+
+.content_text--price {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.content_text--info {
+    color:#353535;
+    margin: 2rem 0;
+    line-height: 2.3rem;
+    font-size: 1.6rem;
+}
+
+.content_text--btn {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: #E30050;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 115px;
+    margin-bottom: 15px;
+}
+
+.content_text--btn:hover {
+    background-color: #428bca;
+}
+
+.content_text--type {
+    border-color:#dddddd;
+    border-style: dotted none none;
+    border-width:1px 0px 0px;
+    color:#353535;
+    font-size:1.3rem;
+    font-weight:500;
+    line-height: 2rem;
+    padding:5px 0px;
+    
+}
+
+.content_text--contact {
+    display: flex;
+}
+.content_text--contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid;
+    color: black;
+}
+.content_text--contact i {
+    font-size: 1.2rem;
+}
+
+.content_text--contact a:hover{
+    color: white;
+    background-color: #0075FF;
+    border: none;
+}
+
+/********************************MORE-INFO***********************************************/
+
+.moreinfo {
+    margin: auto;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid #c0c0c0;
+    height: auto;
+}
+
+.tabs_head {
+    display: flex;
+}
+
+.tab_item {
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.4;
+    font-size: 1.6rem;
+}
+
+.tab_item.active {
+    opacity: 1;
+}
+.tabs_head {
+    position: relative;
+}
+
+.tabs_head .line {
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #B63327;
+    transition: all 0.2s ease;
+}
+
+
+.tabs_content {
+    padding: 30px;
+}
+
+.tabs_content_item{
+    display: none;
+}
+
+.tabs_content_item.active {
+    display: block;
+}
+
+.tabs_content_item table {
+    width: 100%;
+    text-align: left;
+}
+
+.tabs_content_item p {
+    margin: 10px 0;
+    font-size: 1.6rem;
+}
+
+.tabs_content_item .label_star {
+    color: #c0c0c0;
+    font-size: 1.6rem;
+}
+
+.tabs_content_item .label_star:hover {
+    color: #D26E4B;
+}
+
+th  {
+    height: 48px;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 5px;
+    font-size: 1.5rem;
+
+}
+
+td {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.radio_box {
+   display: none;
+}
+
+.choose {
+    color: #D26E4B;
+}
+
+.form_group {
+    margin: 0 ;
+}
+
+#form_danhGia {
+    padding: 20px;
+    border: 2px solid #B63327;
+}
+
+.form_submit {
+    background-color: #B63327;
+}
+
+@media only screen and (max-width: 700px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_img {
+        width: 95%;
+        padding: 0 15px;
+    }
+
+    .content_img_box {
+        width: 100%;
+    }
+
+    .content_text {
+        width: 95%;
+    }
+
+
+
+
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 950px){
+    /*info-item*/
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_img {
+        width: 80%;
+        padding: 0 15px;
+    }
+
+    .content_img_box {
+        width: 100%;
+    }
+
+    .content_text {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

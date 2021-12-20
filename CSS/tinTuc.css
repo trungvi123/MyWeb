@@ -1,0 +1,191 @@
+body {
+    height: auto;
+}
+
+.header_nav {
+    background-color: #353535;
+    position: static;
+}
+
+h3 {
+    font-weight: 600;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2.4rem;
+}
+h2 {
+    text-align: left;
+}
+h4 {
+    text-align: left;
+    color: #353535;
+    line-height: 55px;
+    font-size: 1.4rem;
+    
+}
+
+
+.content {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.main_content {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+
+.main_content_item {
+    width: 30%;
+    height: auto; 
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.main_content_item:hover .main_content_info_child p{
+    color: #428BCA;
+}
+
+.News_content a:hover {
+    color: #428BCA ;
+}
+
+
+.main_content_item img {
+    width: 100%;
+    object-fit: cover;
+    height: 110px;
+}
+
+.main_content_info {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    border: 1px solid  #dddddd;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main_content_info_child {
+    height: 205px;
+    margin: 0 10px;
+}
+
+.main_content_info_child h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 15px 0;
+}
+
+.main_content_info_child p {
+    color: #35383b;
+    font-size: 1.4rem;
+    border-top: 1px solid #35383b;
+    padding-top: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*----------------------------SLIDE-----------------------*/
+
+.sidebar {
+    flex:1;
+}
+
+.sidebar_content {
+    margin: 0 10px;
+}
+
+.search_block--TinTuc input{
+    border-left: 2px solid #dddddd ;
+}
+
+
+.News_box_item {
+    display: flex;
+    height: auto;
+    padding: 10px 0;
+    border-top: 1px solid #dddddd;
+}
+
+.News_img {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.News_img img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.News_content {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.News_content a{
+    color: #35383b;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+/**********************************---RESPONSIVE PAGE TinTuc----***********************************************/
+
+@media only screen and (max-width: 846px){
+    .main_content_item {
+        width: 50%;
+        height: auto; 
+    }
+    
+    .main_content {
+        width: 100%;
+    }
+
+    .main_content_item img {
+        width: 100%;
+        object-fit: cover;
+        height: 180px;
+    }
+    .search_block--TinTuc input{
+        border-left: 2px solid #dddddd ;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 847px) and (max-width: 1024px){
+    .main_content_item {
+        width: 45%;
+        height: auto; 
+    }
+
+    .News_content a{
+        color: #35383b;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
