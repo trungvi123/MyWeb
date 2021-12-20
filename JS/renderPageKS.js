@@ -3,7 +3,7 @@
 var khachSan_content = [
     {  
         id: "khachSan--0",
-        imgLink : "/IMG/tour-img/victoria_hotel.png",
+        imgLink : "IMG/tour-img/victoria_hotel.png",
         head : "Đặt Phòng Khách Sạn Victoria Sapa Resort",
         price: "7,399,000 ₫",
         info: "<strong>Victoria Sapa Resort & Spa</strong> nằm ở thị trấn Sapa, cách Hà Nội 380km về phía Bắc và gần đường biên giới với Trung Quốc. Để đến Khách sạn Victoria Sapa, Quý khách đi tàu từ ga Hà Nội đến ga Lào Cai và chuyển sang xe để đến khách sạn cách đó khoảng 35km.",
@@ -11,7 +11,7 @@ var khachSan_content = [
     },
     {  
         id: "khachSan--1",
-        imgLink : "/IMG/tour-img/resort--phanthiet.png",
+        imgLink : "IMG/tour-img/resort--phanthiet.png",
         head : "Beach Resort Phan Thiết Khuyến Mãi Mùa Đông",
         price: "2,999,000 ₫",
         info: "<strong>Đặt phòng khách sạn Victoria Phan Thiet Beach Resort</strong> - Victoria Phan Thiết Beach Resort & Spa gồm 57 bungalows được thiết kế theo phong cách những ngôi nhà mái tranh mộc mạc ở miền quê ẩn mình trong khu vườn nhiệt đới quyến rũ. ",
@@ -19,7 +19,7 @@ var khachSan_content = [
     },
     {  
         id: "khachSan--2",
-        imgLink : "/IMG/tour-img/nhaatrang.webp",
+        imgLink : "IMG/tour-img/nhaatrang.webp",
         head : "An Lâm Retreats Ninh Vân Bay",
         price: "4,781,267 ₫",
         info: "Chỉ cách thành phố Nha Trang 20 phút đi tàu thuyền, khi đến với<strong> An Lâm Retreats Ninh Vân Bay</strong>, du khách sẽ được bước vào một hành trình gắn kết với thiên nhiên và với chính mình. Hãy cảm nhận chút nắng ấm của biển khơi Nha Trang cùng làn gió biển mát lành, lắng nghe tiếng rì rào của thiên nhiên và thả mình trong sự tĩnh lặng và bình yên tuyệt đối.",
@@ -27,7 +27,7 @@ var khachSan_content = [
     },
     {  
         id: "khachSan--3",
-        imgLink : "/IMG/tour-img/hotram-hotel.png",
+        imgLink : "IMG/tour-img/hotram-hotel.png",
         head : "Đặt Phòng Khách Sạn Grand Hồ Tràm 5 Sao",
         price: "1,980,000 ₫",
         info: "Nằm đối diện resort là sân gôn The Bluffs do tay gôn huyền thoại Greg Norman thiết kế. <strong> The Grand Ho Tram Strip </strong> cách Thành phố Hồ Chí Minh 2 giờ lái xe qua huyện Long Thành và sắp xếp buýt miễn phí cho khách. Dịch vụ đón tại sân bay và máy bay trực thăng được cung cấp kèm phụ phí. Resort cách thành phố Vũng Tàu 50 km và cách Sân bay Quốc tế Tân Sơn Nhất khoảng 120 km.",
