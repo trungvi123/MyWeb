@@ -70,21 +70,25 @@ if ((JSON.parse(localStorage.getItem('CartItem')) !== null)) {
 // click vào icon chuyển trang
 
 
-ShoppingIcon = document.querySelector('.shopping-icon');
-ShoppingIcon.onclick = function () {
-    if (localStorage.getItem("State") == "LoginSuccess") {
-        // khi dang nhap user moi thuc hien cac viec nay
-        var ktra = JSON.parse(localStorage.getItem('CartItem'));
-        if(ktra.length > 0){
-           // Có item nào hay không?
-            location.href = "Cart.html"; 
+ShoppingIcons = document.querySelectorAll('.shopping-icon');
+ShoppingIcons.forEach(function (ShoppingIcon){
+    ShoppingIcon.onclick = function () {
+        console.log("hihi")
+        if (localStorage.getItem("State") == "LoginSuccess") {
+            // khi dang nhap user moi thuc hien cac viec nay
+            var ktra = JSON.parse(localStorage.getItem('CartItem'));
+            if(ktra.length > 0){
+            // Có item nào hay không?
+                location.href = "Cart.html"; 
+            } else {
+                location.href = "EmptyCart.html"
+            }
         } else {
-            location.href = "EmptyCart.html"
+            location.href = "dangNhap.html"
         }
-    } else {
-        location.href = "dangNhap.html"
     }
-}
+});
+
 /*****************************Hiển thị thông tin User********************************* */ 
  // vì file js này liên kết với nhiều file html nên xử lí vấn đề up avatar ở đây 
 var avatarContainer = document.querySelector('.avatar-container');

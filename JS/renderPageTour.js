@@ -2,15 +2,15 @@ var tour_content = [
     {
         id: "tour--0",
         imgLink : "IMG/tour-img/canada.jpg",
-        head : "Du lịch Canada 10 ngày mùa thu 2017 giá tốt khởi hành từ Sài Gòn",
+        head : "Du lịch Canada 10 ngày mùa thu 2021 giá tốt khởi hành từ Sài Gòn",
         price: "97,900,000 ₫",
-        info: "<strong>Du lịch Canada</strong> mùa thu 2017 một trong những Xứ sở lá phong đẹp nhất khi thu đến, và đây cũng là thời điểm lá phong dần dần ngả sang vàng, tạo nên không gian hữu tình, thơ mộng như trong miền cổ tích. Khi thu gõ cửa thành phố Montréal ” <strong>Một trong những thành phố lớn của tỉnh Québec, Canada </strong>“, với sắc thu trên những con đường nơi đây không chỉ trải đầy lá vàng mà còn được nhuộm màu đỏ kiêu sa hay màu xanh pha cam độc đáo. Montréal như chìm trong cả một khoảng trời mùa thu với những hàng cây rực rỡ sắc màu.",
+        info: "<strong>Du lịch Canada</strong> mùa thu 2021 một trong những Xứ sở lá phong đẹp nhất khi thu đến, và đây cũng là thời điểm lá phong dần dần ngả sang vàng, tạo nên không gian hữu tình, thơ mộng như trong miền cổ tích. Khi thu gõ cửa thành phố Montréal ” <strong>Một trong những thành phố lớn của tỉnh Québec, Canada </strong>“, với sắc thu trên những con đường nơi đây không chỉ trải đầy lá vàng mà còn được nhuộm màu đỏ kiêu sa hay màu xanh pha cam độc đáo. Montréal như chìm trong cả một khoảng trời mùa thu với những hàng cây rực rỡ sắc màu.",
         type: "Danh mục: Khách sạn",
     },
     {
         id: "tour--1",
         imgLink : "IMG/tour-img/losangeles2.jpg",
-        head : "Du lịch bờ Tây Hoa Kỳ 7 ngày Los Angeles - Las Vegas giá tốt 2018",
+        head : "Du lịch bờ Tây Hoa Kỳ 7 ngày Los Angeles - Las Vegas giá tốt 2021",
         price: "34,900,000 ₫",
         info: "<strong>Du lịch nước Mỹ</strong> là quốc gia được nhiều người xem là “thiên đường”. Du khách sẽ choáng ngợp trước nước Mỹ hoa lệ, rực rỡ trong hàng triệu triệu ánh đèn muôn màu từ các tòa nhà cao tầng rọi xuống, từ các khách sạn, các trung tâm mua sắm lan tỏa sang, với một phong cách sống hiện đại và văn minh.",
         type: "Danh mục: <a> Du lịch châu Mỹ</a>,<a> Du lịch Mỹ</a>, <a>Du lịch nước ngoài</a>",
